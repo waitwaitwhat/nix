@@ -72,6 +72,15 @@
     };
   };
 
+  home-manager = {
+    useGlobalPkgs = true;
+    useUserPkgs = true;
+    extraSpecialArgs = { inherit inputs; };
+    users = {
+      w8 = ./home/home.nix
+    };
+  };
+
   networking.hostName = "tux"; # Define your hostname.
 
   # Configure network proxy if necessary
