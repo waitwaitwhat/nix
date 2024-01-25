@@ -72,6 +72,12 @@
     };
   };
 
+  users.users.w8 = {
+    isNormalUser = true;
+    home = "/home/w8";
+    extraGroups = [ "wheel" "networkmanager" "homemanager" "nixbld" "video" "audio" "libvirtd" ];
+  };
+
   home-manager = {
     useGlobalPkgs = true;
     useUserPkgs = true;
