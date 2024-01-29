@@ -49,11 +49,11 @@
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
       # FIXME replace with your hostname
-      tux = nixpkgs.lib.nixosSystem {
+      FIXME = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs system;};
         modules = [
           # > Our main nixos configuration file < 
-          ./nixos/hosts/default/configuration.nix
+          ./configuration.nix
         ];
       };
     }; 
