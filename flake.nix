@@ -20,11 +20,7 @@
 
   };
 
-  outputs = { 
-    self, 
-    nixpkgs,
-    ...
-    }@inputs: 
+  outputs = { self, nixpkgs, ... }@inputs: 
   let 
   inherit (self) outputs;
     system = [
