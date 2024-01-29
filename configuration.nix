@@ -3,16 +3,8 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./cachix.nix 
-      ./gaming.nix
-      # ./hardening.nix
-      ./hardware-configuration.nix
-      ./homemanager.nix
-      ./packages.nix
-      ./services.nix
-      ./sh.nix
-      ./users.nix
-      ./vm.nix
+      ./w8.nix 
+      ./wait.nix
       inputs.home-manager.nixosModules.home-manager
     ];
   
