@@ -19,15 +19,15 @@
       extraConfig = ''
         # don’t shutdown when power button is short-pressed
         HandlePowerKey=ignore
-	HandlePowerKeyLongPress=reboot
-	HandleLidSwitch=hibernate
+      	HandlePowerKeyLongPress=reboot
+	      HandleLidSwitch=hibernate
       '';
     };
     openssh = {
       enable = true;
       settings = {
         PermitRootLogin = "no";
-	PasswordAuthentication = true;
+      	PasswordAuthentication = true;
       };
     };
     power-profiles-daemon.enable = false;
@@ -62,12 +62,12 @@
       llmnr = "false";
       extraConfig = ''
         DNSOverTLS=yes
-	DNS=1.1.1.1#cloudflare-dns.com
-	DNS=8.8.8.8#dns.google
-	DNS=1.0.0.1#cloudflare-dns.com
-	DNS=8.8.4.4#dns.google
-	FallbackDNS=
-	MulticastDNS=true
+	      DNS=1.1.1.1#cloudflare-dns.com
+	      DNS=8.8.8.8#dns.google
+      	DNS=1.0.0.1#cloudflare-dns.com
+      	DNS=8.8.4.4#dns.google
+      	FallbackDNS=
+      	MulticastDNS=true
       '';
     };
   };
