@@ -16,7 +16,6 @@
       ../../modules/nixos/virtualisation.nix
       ../../modules/nixos/security.nix
       ../../modules/nixos/services.nix
-      ../../modules/nixos/shell.nix
       ../../modules/nixos/system.nix
       ../../modules/nixos/user.nix
   ];
