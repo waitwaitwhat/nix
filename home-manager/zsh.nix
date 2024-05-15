@@ -16,27 +16,17 @@
         {name = "chisui/zsh-nix-shell";}
         {name = "nix-community/nix-zsh-completions";}
         {name = "zsh-users/zsh-completions";}
+        {name = "romkatv/powerlevel10k"; tags = [ "as:theme" "depth:1" ];}
       ];
     };
-    plugins = [
-       {
-        name = "powerlevel10k";
-        src = pkgs.zsh-powerlevel10k;
-        file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-      }
-        {
-          name = "powerlevel10k-config";
-          src = ./p10k-config;
-          file = "p10k.zsh";
-        }
-    ];
-    initExtra = ''
-      [[ ! -f ${./p10k.zsh;} ]] || source ${./p10k.zsh}
-    '';
     initExtraFirst = ''
       export PATH="$HOME/.local/bin:$PATH"
       # TODO: See if there is better way to set this? Seems not
       zstyle ':completion:*' menu select
+      if [[ -r "''${XDG_CACHE_HOME:-''$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
+        source "''${XDG_CACHE_HOME:-''$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
+      fi
+      [[ ! -f ${./p10k.zsh} ]] || source ${./p10k.zsh}
     '';
   };
 }
