@@ -11,6 +11,7 @@
     zplug = {
       enable = true;
       plugins = [
+        {name = "junegunn/fzf";}
         {name = "catppuccin/zsh-syntax-highlighting";}
         {name = "jeffreytse/zsh-vi-mode";}
         {name = "chisui/zsh-nix-shell";}
