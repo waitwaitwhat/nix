@@ -20,7 +20,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, lanzaboote, disko, hyprland, ... }@inputs: 
+  outputs = { self, nixpkgs, lanzaboote, disko, ... }@inputs: 
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
