@@ -6,6 +6,7 @@
     btop
     efibootmgr
     fzf
+    hyprpaper
     usbutils
     vlc
     vim
