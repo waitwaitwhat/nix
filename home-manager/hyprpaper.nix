@@ -5,10 +5,10 @@
     enable = true;
     settings = {
       preload = [
-        "../../wallpapers/lose-control.png"
+        "../wallpapers/lose-control.png"
       ];
       wallpaper = [
-        "eDP-1,../../wallpapers/lose-control.png"
+        "eDP-1,../wallpapers/lose-control.png"
       ];
     };
   };

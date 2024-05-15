@@ -10,7 +10,7 @@
       displayManager = {
 	lightdm.enable = false;
 	gdm.enable = false;
-	}
+      };
     };
     blueman.enable = true;
     joycond.enable = true;
