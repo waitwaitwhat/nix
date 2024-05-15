@@ -20,7 +20,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, lanzaboote, disko, ... }@inputs: 
+  outputs = { self, nixpkgs, lanzaboote, disko, hyprland, ... }@inputs: 
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -31,6 +31,7 @@
           specialArgs = {inherit inputs;};
           modules = [
             ./hosts/nix-laptop/configuration.nix
+
             inputs.home-manager.nixosModules.default
 	    lanzaboote.nixosModules.lanzaboote
 	    ({ pkgs, lib, ... }: {

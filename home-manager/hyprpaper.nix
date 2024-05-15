@@ -1,16 +1,14 @@
 { config, pkgs, ... }:
-
+  
 {
   services.hyprpaper = {
     enable = true;
     settings = {
-      ipc = "on";
-
-      preload =
-        [ "~/Pictures/lose-control.png" ];
-
-      wallpaper = [
-        "eDP-1,~/Pictures/lose-control.png"
+      preloads = [
+        "../../wallpapers/lose-control.png"
+      ];
+      wallpapers = [
+        "eDP-1,../../wallpapers/lose-control.png"
       ];
     };
   };

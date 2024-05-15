@@ -17,9 +17,10 @@
       owner = "lexical-lsp";
       repo = "lexical";
     };
+    hyprland.url = "github:hyprwm/Hyprland";
   };
 
-  outputs = { nixpkgs, home-manager, ... }@inputs:
+  outputs = { nixpkgs, home-manager, hyprland, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -30,7 +31,11 @@
 	extraSpecialArgs = {inherit inputs;};
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
-        modules = [ ./home.nix ];
+        modules = [ 
+          ./home.nix
+          hyprland.homeManagerModules.default
+          {wayland.windowManager.hyprland.enable = true;}
+        ];
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
       };

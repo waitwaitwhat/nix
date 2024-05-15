@@ -5,7 +5,9 @@
     ./alacritty.nix
     ./firefox.nix
     ./git.nix
+    ./hyprland.nix
     ./hyprlock.nix
+    ./hyprpaper.nix
     ./neovim.nix 
     ./waybar.nix
     ./zsh.nix
