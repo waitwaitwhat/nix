@@ -28,7 +28,6 @@
   # environment.
   home.packages = with pkgs; [
     duf
-    fzf
     ghidra
     ncdu
     obsidian

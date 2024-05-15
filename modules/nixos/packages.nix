@@ -3,11 +3,12 @@
 {
   environment.systemPackages = with pkgs; [
     authy
-    efibootmgr
-    usbutils
-    wget
     btop
+    efibootmgr
+    fzf
+    usbutils
     vlc
     vim
+    wget
   ];
 }
