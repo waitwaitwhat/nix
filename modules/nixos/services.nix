@@ -9,11 +9,6 @@
       #libinput.enable = true;
     };
     blueman.enable = true;
-    displayManager = {
-      sddm = {
-        enable = true;
-      };
-    };
     joycond.enable = true;
     logind = {
       extraConfig = ''
