@@ -18,6 +18,21 @@
         {name = "zsh-users/zsh-completions";}
       ];
     };
+    plugins = [
+       {
+        name = "powerlevel10k";
+        src = pkgs.zsh-powerlevel10k;
+        file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+      }
+        {
+          name = "powerlevel10k-config";
+          src = ./p10k-config;
+          file = "p10k.zsh";
+        }
+    ];
+    initExtra = ''
+      [[ ! -f ${./p10k.zsh;} ]] || source ${./p10k.zsh}
+    '';
     initExtraFirst = ''
       export PATH="$HOME/.local/bin:$PATH"
       # TODO: See if there is better way to set this? Seems not
