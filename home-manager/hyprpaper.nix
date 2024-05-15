@@ -4,10 +4,10 @@
   services.hyprpaper = {
     enable = true;
     settings = {
-      preloads = [
+      preload = [
         "../../wallpapers/lose-control.png"
       ];
-      wallpapers = [
+      wallpaper = [
         "eDP-1,../../wallpapers/lose-control.png"
       ];
     };

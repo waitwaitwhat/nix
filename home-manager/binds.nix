@@ -17,7 +17,7 @@ _: {
       "$mainMod, left, movefocus, l"
       "$mainMod, right, movefocus, r"
       "$mainMod, up, movefocus, u"
-      "$mainMod, down, movefovus, d"
+      "$mainMod, down, movefocus, d"
 
       "$mainMod, 1, workspace, 1"
       "$mainMod, 2, workspace, 2"

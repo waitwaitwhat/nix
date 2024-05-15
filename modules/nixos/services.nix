@@ -7,6 +7,10 @@
       xkb.layout = "us";
       xkb.variant = "";
       #libinput.enable = true;
+      displayManager = {
+	lightdm.enable = false;
+	gdm.enable = false;
+	}
     };
     blueman.enable = true;
     joycond.enable = true;
