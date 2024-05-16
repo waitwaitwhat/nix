@@ -4,11 +4,12 @@
   services.hyprpaper = {
     enable = true;
     settings = {
+      ipc = "on";
       preload = [
-        "../wallpapers/lose-control.png"
+        "~/flake/wallpapers/lose-control.png"
       ];
       wallpaper = [
-        "eDP-1,../wallpapers/lose-control.png"
+        "eDP-1,~/flake/wallpapers/lose-control.png"
       ];
     };
   };
