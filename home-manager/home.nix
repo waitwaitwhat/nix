@@ -36,6 +36,7 @@
     obsidian
     obs-studio 
     ripgrep
+    slack
     syncthing
     vulnix
     yt-dlp

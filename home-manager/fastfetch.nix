@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       logo = {
-        source = "nixos-linux";
+        source = "nixos-old-small";
         padding = {
           left = 1;
           right = 3;
@@ -34,6 +34,18 @@
           key = " wm      ";
         }
         {
+          type = "terminal";
+          key = "terminal  ";
+        }
+        {
+          type = "terminalfont";
+          key = "font      ";
+        }
+        {
+          type = "shell";
+          key = "shell     ";
+        }
+        {
           type = "command";
           key = "󰆧 packages";
           text = "(${lib.getExe' pkgs.nix "nix-store"} --query --requisites /run/current-system | wc -l | tr -d '\n') && echo ' (nix; /run/current-system)'";
@@ -48,7 +60,19 @@
           format = "{1} / {2} ({3})";
           folders = "/";
         }
-      ]:
+        {
+          type = "battery";
+          key = "battery   ";
+        }
+        {
+          type = "cpu";
+          key = "cpu       ";
+        }
+        {
+          type = "gpu";
+          key = "gpu       ";
+        }
+      ];
     };
   };
 }
