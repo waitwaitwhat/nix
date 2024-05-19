@@ -3,8 +3,5 @@
 {
   programs.nushell = {
     enable = true;
-    extraConfig = {
-
-    };
   };
 }
