@@ -32,6 +32,7 @@
   home.packages = with pkgs; [
     duf
     ghidra
+    monero-gui
     ncdu
     obsidian
     obs-studio 
