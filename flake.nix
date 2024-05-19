@@ -14,6 +14,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     lanzaboote = {
       url = "github:nix-community/lanzaboote/v0.3.0";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -31,10 +36,10 @@
           specialArgs = {inherit inputs;};
           modules = [
             ./hosts/nix-laptop/configuration.nix
-
+            disko.nixosModules.disko
             inputs.home-manager.nixosModules.default
-	    lanzaboote.nixosModules.lanzaboote
-	    ({ pkgs, lib, ... }: {
+	          lanzaboote.nixosModules.lanzaboote
+	          ({ pkgs, lib, ... }: {
 
               environment.systemPackages = [
               # For debugging and troubleshooting Secure Boot.
@@ -46,9 +51,9 @@
               # generated at installation time. So we force it to false
               # for now.
               boot.loader = { 
-	        systemd-boot.enable = lib.mkForce false;
-	        grub.enable = lib.mkForce false;
-	      };
+	              systemd-boot.enable = lib.mkForce false;
+	              grub.enable = lib.mkForce false;
+	            };
 
               boot.lanzaboote = {
                 enable = true;
