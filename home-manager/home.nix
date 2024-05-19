@@ -10,6 +10,8 @@
     ./hyprlock.nix
     ./hyprpaper.nix
     ./neovim.nix 
+    ./nush.nix
+    ./starship.nix
     ./waybar.nix
     ./zsh.nix
   ];
