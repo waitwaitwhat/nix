@@ -3,20 +3,20 @@
 {
   imports =
     [
-      ../../modules/nixos/bootloader.nix
-      ../../modules/nixos/cosmic.nix
-      ../../modules/nixos/font.nix
-      ../../modules/nixos/hardware.nix
+      ../../modules/bootloader.nix
+      ../../modules/cosmic.nix
+      ../../modules/font.nix
+      ../../modules/hardware.nix
       ./hardware-configuration.nix
       "${builtins.fetchTarball "https://github.com/nix-community/disko/archive/master.tar.gz"}/module.nix"
       ./disk-config.nix
-      ../../modules/nixos/network.nix
-      ../../modules/nixos/pipewire.nix
-      ../../modules/nixos/program.nix
-      ../../modules/nixos/virtualisation.nix
-      ../../modules/nixos/security.nix
-      ../../modules/nixos/services.nix
-      ../../modules/nixos/system.nix
-      ../../modules/nixos/user.nix
+      ../../modules/network.nix
+      ../../modules/pipewire.nix
+      ../../modules/program.nix
+      ../../modules/virtualisation.nix
+      ../../modules/security.nix
+      ../../modules/services.nix
+      ../../modules/system.nix
+      ../../modules/user.nix
   ];
 }
