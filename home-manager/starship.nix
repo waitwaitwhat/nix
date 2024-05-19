@@ -4,8 +4,8 @@
   programs.starship = {
     enable = true;
     enableBashIntegration = true;
-    enableNushellIntegration
-    enableZshIntegration
+    enableNushellIntegration = true;
+    enableZshIntegration = true;
     settings = {
 
     };
