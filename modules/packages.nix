@@ -8,6 +8,7 @@
     efibootmgr
     fzf
     hyprpaper
+    nh
     usbutils
     vlc
     vim
