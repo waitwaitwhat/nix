@@ -56,69 +56,6 @@ in {
         SHELL = ''"${pkgs.nushell}/bin/nu"'';
         EDITOR = ''"nvim"'';
       };
-
-      # See the Nushell docs for more options.
-      extraConfig = let
-        conf = builtins.toJSON {
-          show_banner = false;
-          edit_mode = "vi";
-          shell_integration = true;
-
-          ls.clickable_links = true;
-          rm.always_trash = true;
-
-          table = {
-            mode = "rounded";
-            index_mode = "always";
-            header_on_separator = false;
-          };
-
-          cursor_shape = {
-            vi_insert = "line";
-            vi_normal = "block";
-          };
-
-          menus = [
-            {
-              name = "completion_menu";
-              only_buffer_difference = false;
-              marker = "? ";
-              type = {
-                layout = "columnar"; # list, description
-                columns = 4;
-                col_padding = 2;
-              };
-              style = {
-                text = "magenta";
-                selected_text = "blue_reverse";
-                description_text = "yellow";
-              };
-            }
-          ];
-        };
-        # completion = name: ''
-          # source ${pkgs.nu_scripts}/share/nu_scripts/custom-completions/${name}/${name}-completions.nu
-        # '';
-        # completions = names:
-          # builtins.foldl' (prev: str: ''
-            # ${prev}
-            # ${str}'') "" (map completion names);
-      # in ''
-        # $env.config = ${conf};
-        # ${completions ["git" "nix" "man" "cargo"]}
-
-        # def --env ff [...args] {
-        	# let tmp = (mktemp -t "yazi-cwd.XXXXX")
-        	# yazi ...$args --cwd-file $tmp
-        	# let cwd = (open $tmp)
-        	# if $cwd != "" and $cwd != $env.PWD {
-        	# 	cd $cwd
-        #	}
-        	# rm -fp $tmp
-        # }
-
-        # source /home/${userName}/.config/nushell/extra.nu
-      # '';
     };
   };
 }
