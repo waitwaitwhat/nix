@@ -10,6 +10,8 @@
     hyprpaper
     ly
     nh
+    nix-output-monitor
+    nvd
     usbutils
     vlc
     vim
