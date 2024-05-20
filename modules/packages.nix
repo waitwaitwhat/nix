@@ -8,6 +8,7 @@
     efibootmgr
     fzf
     hyprpaper
+    ly
     nh
     usbutils
     vlc
