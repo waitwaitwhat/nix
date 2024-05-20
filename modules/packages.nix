@@ -8,8 +8,6 @@
     efibootmgr
     fzf
     hyprpaper
-    ly
-    nh
     nix-output-monitor
     nvd
     usbutils
