@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    authy
+    # authy
     btop
     cargo
     chafa
@@ -10,7 +10,6 @@
     efibootmgr
     fzf
     gcc
-    hyprpaper
     nix-output-monitor
     nvd
     rustup
