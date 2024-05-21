@@ -34,11 +34,14 @@
   home.packages = with pkgs; [
     duf
     ghidra
+    keepassxc
     monero-gui
     ncdu
+    nix-prefetch-scripts
     obsidian
     obs-studio 
     ripgrep
+    spotify
     slack
     syncthing
     vulnix
