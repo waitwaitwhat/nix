@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ./disk-config.nix
       ../../modules/network.nix
+      ../../modules/packages.nix
       ../../modules/pipewire.nix
       ../../modules/program.nix
       ../../modules/virtualisation.nix

@@ -1,4 +1,4 @@
-{ config, pkgs, .. }:
+{ config, pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -6,8 +6,10 @@
     btop
     cargo
     chafa
+    clang
     efibootmgr
     fzf
+    gcc
     hyprpaper
     nix-output-monitor
     nvd
