@@ -2,7 +2,11 @@
 {
   networking = {
     hostName = "nix-laptop";
-    networkmanager.enable = true;
+    networkmanager = { 
+      enable = true;
+      dns = "systemd-resolved";
+      wifi.powersave = true;
+    };
     # wireless.enable = true;
     nameservers = [ "1.1.1.1" ];
     firewall = {

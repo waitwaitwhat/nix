@@ -1,5 +1,6 @@
 { pkgs, ... }: 
 {
+  environment.variables.FLAKE = "/home/w8/flake";
   programs = {
     dconf.enable = true;
     zsh.enable = true;
@@ -17,7 +18,6 @@
       enable = true;
       clean.enable = true;
       clean.extraArgs = "--keep-since 1d --keep 3 --ask";
-      flake = "/home/w8/flake/";
     };
     steam = {
       enable = true;
