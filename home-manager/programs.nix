@@ -1,2 +1,10 @@
-i exist
+{ pkgs, config, ... }:
+
+{
+  programs = {
+    bat = {
+      enable = true;
+    };
+  };
+}
 

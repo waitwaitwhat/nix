@@ -11,6 +11,7 @@
     ./hyprpaper.nix
     ./neovim.nix 
     ./nushell.nix
+    ./programs.nix
     ./starship.nix
     ./waybar.nix
     ./zsh.nix

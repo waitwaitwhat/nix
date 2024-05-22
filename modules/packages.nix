@@ -7,9 +7,11 @@
     cargo
     chafa
     clang
+    du-dust
     efibootmgr
     fzf
     gcc
+    ly
     nix-output-monitor
     nvd
     rustup
