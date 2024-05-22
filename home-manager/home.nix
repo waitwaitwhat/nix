@@ -12,6 +12,7 @@
     ./neovim.nix 
     ./nushell.nix
     ./programs.nix
+    ./rofi.nix
     ./starship.nix
     ./waybar.nix
     ./zsh.nix

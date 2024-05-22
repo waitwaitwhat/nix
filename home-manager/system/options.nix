@@ -13,7 +13,7 @@
   #
   # Your hostname will be visible to other gadgets on the network, just so you know.
   # Required by system/networking.nix
-  # hostName = "NixOS";
+  hostName = "nix-laptop";
 
   ####################################################
   # The variable below defines the locale to be used on the computer. It is used by apps to determine language settings,
@@ -24,7 +24,7 @@
   #
   # If you set the wrong locale, apps like the browser might display dates and currency in "incorrect formats".
   # Required by system/locale.nix
-  # theLocale = "en_ZW.UTF-8";
+  theLocale = "en_AU.UTF-8";
 
   ####################################################
   # You almost certainly want to edit the line below. It defines the time zone used when displaying times and dates. Suppose
@@ -36,7 +36,7 @@
   #
   # See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for a list of possible values.
   # Required by system/locale.nix
-  # theTimezone = "Africa/Harare";
+  theTimezone = "Australia/Melbourne";
 
   ####################################################
   # The variable below is used by the flake to determine the system architecture. By default, it's for 64-bit Intel/AMD Linux.
@@ -48,7 +48,7 @@
   #
   # However, I can not guarantee that the rest of this NixOS configuration will function properly in that case. It will not.
   # Required by flake.nix
-  # system = "X86_64-linux";
+  system = "X86_64-linux";
 
   ####################################################
   # The 'fontName' variable below is used by apps like Waybar and Kitty to determine which font to use. It is *not* the actual font
@@ -69,5 +69,5 @@
   #####################################################
   # Do not modify the variable below.
   # We're using it to make sure that home-manager's stateVersion is in sync with the system's stateVersion.
-  # stateVersion = "23.11";
+  stateVersion = "23.11";
 }
