@@ -11,7 +11,7 @@ _: {
       "$mainMod, J, togglesplit,"
       "$mainMod, M, exit,"
       "$mainMod, P, pseudo,"
-      "$mainMod, R, exec, wofi --show drun"
+      "$mainMod, R, exec, rofi -show drun -show-icons"
       "$mainMod, V, togglefloating,"
 
       "$mainMod, left, movefocus, l"
