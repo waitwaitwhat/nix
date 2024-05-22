@@ -35,6 +35,7 @@
   # environment.
   home.packages = with pkgs; [
     brightnessctl
+    du-dust
     duf
     ffmpeg
     ghidra

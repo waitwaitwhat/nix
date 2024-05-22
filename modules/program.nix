@@ -1,6 +1,6 @@
 { pkgs, ... }: 
 {
-  environment.variables.FLAKE = "/home/w8/flake";
+  environment.sessionVariables.FLAKE = "/home/w8/flake";
   programs = {
     dconf.enable = true;
     zsh.enable = true;
