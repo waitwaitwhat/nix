@@ -4,7 +4,7 @@
   programs = {
     dconf.enable = true;
     zsh.enable = true;
-    eza.enable = true;
+    # eza.enable = true;
     git.enable = true;
     gnupg.agent = {
       enable = true;
