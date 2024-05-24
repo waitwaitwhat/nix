@@ -11,6 +11,7 @@
     ./hyprpaper.nix
     ./neovim.nix 
     ./nushell.nix
+    ./packages.nix
     ./programs.nix
     ./rofi.nix
     ./starship.nix
@@ -31,40 +32,6 @@
     };
   };
   
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
-  home.packages = with pkgs; [
-    brightnessctl
-    du-dust
-    duf
-    ffmpeg
-    ghidra
-    grim
-    keepassxc
-    monero-gui
-    ncdu
-    niv
-    nix-prefetch-scripts
-    obsidian
-    obs-studio
-    piper
-    pass-wayland
-    parsec-bin
-    ripgrep
-    sbctl
-    spotify
-    slack
-    syncthing
-    thunderbird
-    tor-browser-bundle-bin
-    turso-cli
-    (discord.override {withVencord = true;})
-    vesktop
-    vlc
-    vulnix
-    yt-dlp
-  ];
-
   home.file = {
   };
 

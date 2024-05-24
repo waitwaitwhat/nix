@@ -38,6 +38,7 @@
     };
     thermald.enable = true;
     ratbagd.enable = true;
+    syncthing.enable = true;
     hydra = {
       enable = false;
     };

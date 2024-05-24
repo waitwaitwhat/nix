@@ -3,7 +3,6 @@
 {
   environment.systemPackages = with pkgs; [
     # authy
-    btop
     cargo
     chafa
     clang
@@ -11,7 +10,6 @@
     efibootmgr
     fzf
     gcc
-    ly
     nix-output-monitor
     nvd
     rustup

@@ -6,6 +6,7 @@
       enable = true;
       powerOnBoot = true;
     };
+    brillo.enable = true;
     steam-hardware.enable = true;
     opengl = {
       enable = true;
