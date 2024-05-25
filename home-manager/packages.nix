@@ -11,7 +11,7 @@
     keepassxc
     ncdu
     niv
-    nix-prefetch-script
+    # nix-prefetch-script
     obsidian
     obs-studio
     piper

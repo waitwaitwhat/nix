@@ -12,6 +12,7 @@ _: {
       "$mainMod, M, exit,"
       "$mainMod, P, pseudo,"
       "$mainMod, R, exec, rofi -show drun -show-icons"
+      "$mainmod, T, exec, grim -g $(slurp)"
       "$mainMod, V, togglefloating,"
 
       "$mainMod, left, movefocus, l"

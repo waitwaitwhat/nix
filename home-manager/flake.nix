@@ -8,18 +8,20 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     firefox-addons = {
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    hyprland.url = "git+https://github/com/hyprwm/Hyprland?submodules=1";
+
     lexical = {
       type = "github";
       owner = "lexical-lsp";
       repo = "lexical";
     };
-    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
   };
-
   outputs = { nixpkgs, home-manager, hyprland, ... }@inputs:
     let
       system = "x86_64-linux";
@@ -28,7 +30,7 @@
     in {
       homeConfigurations."w8" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-	extraSpecialArgs = {inherit inputs;};
+	      extraSpecialArgs = {inherit inputs;};
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
         modules = [ 

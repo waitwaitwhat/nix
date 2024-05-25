@@ -13,6 +13,8 @@
     nix-output-monitor
     nvd
     rustup
+    sqlite
+    sqlitebrowser
     usbutils
     vlc
     vim
