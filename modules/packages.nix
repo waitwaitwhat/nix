@@ -19,5 +19,7 @@
     vlc
     vim
     wget
+    wineWowPackages.stable
+    winetricks
   ];
 }

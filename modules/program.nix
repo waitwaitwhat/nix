@@ -20,6 +20,10 @@
       clean.enable = true;
       clean.extraArgs = "--keep-since 1d --keep 3 --ask";
     };
+    nix-ld.enable = true;
+    nix-ld.libraries = with pkgs; [
+
+    ];
     steam = {
       enable = true;
       gamescopeSession.enable = true;
