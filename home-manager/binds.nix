@@ -11,7 +11,7 @@ _: {
       "$mainMod, J, togglesplit,"
       "$mainMod, M, exit,"
       "$mainMod, P, pseudo,"
-      "$mainMod, R, exec, rofi -show drun -show-icons"
+      "SUPER, R, exec, rofi -show drun -show-icons"
       "$mainMod, T, exec, grim -g $(slurp)"
       "$mainMod, V, togglefloating,"
 
@@ -47,6 +47,13 @@ _: {
     bindm = [
       "$mainMod, mouse:272, movewindow"
       "$mainMod, mouse:273, resizewindow"
+    ];
+    bindle = [
+      ", XF86MonBrightnessUp, exec, brillo -r 19200 -A 480"
+      ", XF86MonBrightnessDown, exec, brillo -r 19200 -U 480"
+    ];
+    bindr = [
+      # "SUPER, SUPER_L, R, exec, pkill rofi | rofi -show drun -show-icons"
     ];
   };
 }

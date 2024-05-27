@@ -21,6 +21,7 @@
 	ovmf.packages = [pkgs.OVMFFull.fd ];
       };
     };
+    waydroid.enable = true;
     spiceUSBRedirection.enable = true;
   };
   services.spice-vdagentd.enable = true;
