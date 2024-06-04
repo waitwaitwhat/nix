@@ -10,7 +10,7 @@
           y = 10;
         };
         dynamic_padding = true;
-        opacity = 0.68;
+        opacity = 0.59;
       };
       font.normal = {
         family = "Iosevka Nerd Font";
