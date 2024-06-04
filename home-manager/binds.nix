@@ -18,7 +18,7 @@ _: {
       "$mod SUPER, G, exec, grimblast --notify copysave area"
 
       # current screen
-      "$mod SUPER SHIFT, R, exec, grimblast --notify --cursor copysave output"
+      "$mod SUPER SHIFT, G, exec, grimblast --notify --cursor copysave output"
 
       # all screens
       "$mod SUPER ALT, G, exec, grimblast --notify --cursor copysave screen"
