@@ -6,10 +6,10 @@
     settings = {
       ipc = "on";
       preload = [
-        "~/flake/wallpapers/lose-control.png"
+        "~/flake/wallpapers/kazusa+senseicomfy.jpg"
       ];
       wallpaper = [
-        "eDP-1,~/flake/wallpapers/lose-control.png"
+        "eDP-1,~/flake/wallpapers/kazusa+senseicomfy.jpg"
       ];
     };
   };
