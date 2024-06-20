@@ -5,6 +5,7 @@
     ./alacritty.nix
     ./fastfetch.nix
     ./firefox.nix
+    ./foot.nix
     ./git.nix
     ./hyprland.nix
     ./hyprlock.nix
