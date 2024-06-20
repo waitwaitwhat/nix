@@ -6,7 +6,7 @@
       ];
       exec-once = [
         # "waybar"
-        "./eww/config/scripts/master.sh"
+        "cd /home/w8/flake/home-manager/eww/config/scripts ; ./master.sh"
         "hyprpaper"
         "firefox"
       ];

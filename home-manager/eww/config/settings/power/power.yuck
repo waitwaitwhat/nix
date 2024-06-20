@@ -36,7 +36,7 @@
     :class "lock"
     :cursor "pointer"
     :height 30
-    :onclick "/home/nick/dotfiles/home-manager/modules/eww/config/scripts/swaylock.sh"
+    :onclick "/home/nick/dotfiles/home-manager/modules/eww/config/script/lock.sh"
           (image
         :class "lockButton"
         :image-width 20
