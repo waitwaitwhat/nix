@@ -18,7 +18,7 @@
     ./starship.nix
     ./waybar.nix
     ./zsh.nix
-    ./eww/default.nix
+    ./eww/eww.nix
   ];
   
   home.username = "w8";

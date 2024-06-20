@@ -5,6 +5,7 @@
     pkgs.brightnessctl
     pkgs.du-dust
     pkgs.duf
+    pkgs.eww-wayland
     pkgs.ffmpeg
     pkgs.ghidra
     pkgs.grim
