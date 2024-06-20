@@ -9,6 +9,7 @@
     ./hyprland.nix
     ./hyprlock.nix
     ./hyprpaper.nix
+    ./kitty.nix
     ./neovim.nix 
     ./nushell.nix
     ./packages.nix
@@ -17,6 +18,7 @@
     ./starship.nix
     ./waybar.nix
     ./zsh.nix
+    ./eww/default.nix
   ];
   
   home.username = "w8";

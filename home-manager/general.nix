@@ -5,7 +5,8 @@
         "eDP-1, 1920x1080@60, 0x0, 1"
       ];
       exec-once = [
-        "waybar"
+        # "waybar"
+        "./eww/config/scripts/master.sh"
         "hyprpaper"
         "firefox"
       ];
@@ -74,8 +75,7 @@
         name = "epic-mouse-v1";
         sensitivity = "-0.5";
       };
-      misc = {
-        disable_hyprland_logo = true;
+      misc = { disable_hyprland_logo = true;
         mouse_move_enables_dpms = true;
         key_press_enables_dpms = false;
       };

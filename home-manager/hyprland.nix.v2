@@ -1,0 +1,24 @@
+{pkgs, ...}: {
+  wayland.windowManager.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+    systemd.enable = true;
+    settings = {
+      animation = import ./hyprland/animation.nix;
+      bezier = import ./hyprland/bezier.nix;
+      bind = import ./hyprland/bind.nix;
+      bindm = import ./hyprland/bindm.nix;
+      bindle = import ./hyprland/bindle.nix;
+      decoration = import ./hyprland/decoration.nix;
+      dwindle = import ./hyprland/dwindle.nix;
+      exec-once = import ./hyprland/exec-once-desktop.nix;
+      general = import ./hyprland/general.nix;
+      input = import ./hyprland/input.nix;
+      misc = import ./hyprland/misc.nix;
+      monitor = [ "eDp-1, 1920x1080@60, 0x0, 1" ];
+      windowrule = import ./hyprland/windowrule.nix;
+      windowrulev2 = import ./hyprland/windowrulev2.nix;
+    };
+  };
+}
+

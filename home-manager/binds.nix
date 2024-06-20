@@ -2,7 +2,7 @@ _: {
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "SUPER";
     bind = [
-      "$mainMod, A, exec, alacritty"
+      "$mainMod, A, exec, kitty"
       "$mainMod, D, exec, discord"
       "$mainMod, C, killactive,"
       "$mainMod, E, exec, cosmic-files"

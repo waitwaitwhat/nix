@@ -1,2 +1,6 @@
-kitty file, added for git, will edit later
-
+{ config, pkgs, ... }:
+{
+  programs.kitty = {
+    enable = true;
+  };
+}
