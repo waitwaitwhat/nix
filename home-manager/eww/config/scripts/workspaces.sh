@@ -2,7 +2,7 @@
 
 trap "exit" SIGTERM SIGINT
 
-iconBasePath="/home/nick/dotfiles/home-manager/modules/eww/config/images"
+iconBasePath="~/flake/home-manager/eww/config/images"
 
 focusedIcon="ws-focus.png"
 nonEmptyIcon="ws-active.png"

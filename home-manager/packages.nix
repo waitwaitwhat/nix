@@ -30,6 +30,7 @@
     pkgs.vesktop
     pkgs.vlc
     pkgs.vulnix
+    pkgs.wl-clipboard
     pkgs.yt-dlp
     inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
   ];

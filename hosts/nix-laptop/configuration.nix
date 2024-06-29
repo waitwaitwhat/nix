@@ -6,7 +6,7 @@
       ../../modules/bootloader.nix
       ../../modules/cosmic.nix
       ../../modules/font.nix
-      ../../modules/greetd.nix
+      # ../../modules/greetd.nix
       ../../modules/hardware.nix
       ./hardware-configuration.nix
       ./disk-config.nix

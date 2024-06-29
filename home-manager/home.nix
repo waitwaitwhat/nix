@@ -5,7 +5,6 @@
     ./alacritty.nix
     ./fastfetch.nix
     ./firefox.nix
-    ./foot.nix
     ./git.nix
     ./hyprland.nix
     ./hyprlock.nix
@@ -18,6 +17,7 @@
     ./rofi.nix
     ./starship.nix
     ./waybar.nix
+    ./wezterm.nix
     ./zsh.nix
     ./eww/default.nix
   ];
