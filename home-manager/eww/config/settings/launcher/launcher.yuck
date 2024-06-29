@@ -11,7 +11,7 @@
 		  :class "menu"
 		  :image-width 35
 		  :image-height 35
-		  :path "~/flake/home-manager/eww/config/images/apps.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/apps.png"
 		)
 	  )
 	  (revealer
@@ -52,7 +52,7 @@
 		  :class "bitwardenButton"
 		  :image-width 23
 		  :image-height 23
-		  :path "~/flake/home-manager/eww/config/images/bitwarden.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/bitwarden.png"
 		)
 	)
   )
@@ -68,7 +68,7 @@
 		  :class "resolveButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "~/flake/home-manager/eww/config/images/resolve.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/resolve.png"
 		)
 	)
   )
@@ -84,7 +84,7 @@
 		  :class "kritaButton"
 		  :image-width 25
 		  :image-height 25
-		  :path "~/flake/home-manager/eww/config/images/krita.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/krita.png"
 		)
 	)
   )
@@ -99,7 +99,7 @@
 		  :class "monitorButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "~/flake/home-manager/eww/config/images/monitor.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/monitor.png"
 		)
 	)
   )
@@ -115,7 +115,7 @@
 		  :class "obsButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "~/flake/home-manager/eww/config/images/obs.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/obs.png"
 		)
 	)
   )
@@ -131,7 +131,7 @@
 		  :class "obsidianButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "~/flake/home-manager/eww/config/images/obsidian.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/obsidian.png"
 		)
 	)
   )
@@ -147,7 +147,7 @@
 		  :class "vscodeButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "~/flake/home-manager/eww/config/images/vscode.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/vscode.png"
 		)
 	)
   )
@@ -163,7 +163,7 @@
 		  :class "discordButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "~/flake/home-manager/eww/config/images/discord.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/discord.png"
 		)
 	)
   )
@@ -179,7 +179,7 @@
 		  :class "matrixButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "~/flake/home-manager/eww/config/images/matrix.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/matrix.png"
 		)
 	)
   )
@@ -195,7 +195,7 @@
 		  :class "firefoxButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "~/flake/home-manager/eww/config/images/firefox.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/firefox.png"
 		)
 	)
   )
@@ -211,7 +211,7 @@
 		  :class "lutrisButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "~/flake/home-manager/eww/config/images/lutris.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/lutris.png"
 		)
 	)
   )
@@ -227,7 +227,7 @@
 		  :class "signalButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "~/flake/home-manager/eww/config/images/signal.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/signal.png"
 		)
 	)
   )
@@ -243,7 +243,7 @@
 		  :class "steamButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "~/flake/home-manager/eww/config/images/steam.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/steam.png"
 		)
 	)
   )
@@ -259,7 +259,7 @@
 		  :class "spotifyButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "~/flake/home-manager/eww/config/images/spotify.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/spotify.png"
 		)
 	)
   )

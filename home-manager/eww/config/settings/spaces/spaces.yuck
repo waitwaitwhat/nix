@@ -1,7 +1,7 @@
-(defvar workspaceIcon1 "~/flake/home-manager/eww/config/images/ws-inactive.png")
-(defvar workspaceIcon2 "~/flake/home-manager/eww/config/images/ws-inactive.png")
-(defvar workspaceIcon3 "~/flake/home-manager/eww/config/images/ws-inactive.png")
-(defvar workspaceIcon4 "~/flake/home-manager/eww/config/images/ws-inactive.png")
+(defvar workspaceIcon1 "/home/w8/flake/home-manager/eww/config/images/ws-inactive.png")
+(defvar workspaceIcon2 "/home/w8/flake/home-manager/eww/config/images/ws-inactive.png")
+(defvar workspaceIcon3 "/home/w8/flake/home-manager/eww/config/images/ws-inactive.png")
+(defvar workspaceIcon4 "/home/w8/flake/home-manager/eww/config/images/ws-inactive.png")
 
 (defwidget workspaces []
 	(box

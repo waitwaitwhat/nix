@@ -40,7 +40,7 @@
         :class "nix"
         :image-width 17
         :image-height 17
-        :path "~/flake/home-manager/eww/config/images/ssd.png"
+        :path "/home/w8/flake/home-manager/eww/config/images/ssd.png"
       )
     )
       )
@@ -66,7 +66,7 @@
         :class "nix"
         :image-width 17
         :image-height 17
-        :path "~/flake/home-manager/eww/config/images/net.png"
+        :path "/home/w8/flake/home-manager/eww/config/images/net.png"
       )
       )
     )
@@ -92,7 +92,7 @@
 			:class "nix"
 			:image-width 19
 			:image-height 19
-			:path "~/flake/home-manager/eww/config/images/ram.png"
+			:path "/home/w8/flake/home-manager/eww/config/images/ram.png"
 		)
 	)
 	  )
@@ -118,7 +118,7 @@
         :class "nix"
         :image-width 17
         :image-height 17
-        :path "~/flake/home-manager/eww/config/images/cpu.png"
+        :path "/home/w8/flake/home-manager/eww/config/images/cpu.png"
       )
     )
       )

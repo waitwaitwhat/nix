@@ -1,7 +1,7 @@
-(defpoll display :interval "0.1s" "~/flake/home-manager/eww/config/scripts/volume/volumedisplay.sh")
-(defvar volumeUpIcon "~/flake/home-manager/eww/config/images/plus.png")
-(defvar volumeDownIcon "~/flake/home-manager/eww/config/images/minus.png")
-(defvar volumeMuteIcon "~/flake/home-manager/eww/config/images/mute.png")
+(defpoll display :interval "0.1s" "/home/w8/flake/home-manager/eww/config/scripts/volume/volumedisplay.sh")
+(defvar volumeUpIcon "/home/w8/flake/home-manager/eww/config/images/plus.png")
+(defvar volumeDownIcon "/home/w8/flake/home-manager/eww/config/images/minus.png")
+(defvar volumeMuteIcon "/home/w8/flake/home-manager/eww/config/images/mute.png")
 
 (defwidget systemMenu []
 	(box
@@ -27,7 +27,7 @@
 		  :class "gear"
 		  :image-width 25
 		  :image-height 25
-		  :path "~/flake/home-manager/eww/config/images/gear.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/gear.png"
 		)
 	  )
 	)
@@ -63,7 +63,7 @@
 		  :class "volumeButton"
 		  :image-width 25
 		  :image-height 25
-		  :path "~/flake/home-manager/eww/config/images/speaker.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/speaker.png"
 		)
 	  )
 	)
@@ -117,7 +117,7 @@
 	  :class "volumeMute"
 	  :cursor "pointer"
 	  :width 25
-	  :onclick "~/flake/home-manager/eww/config/scripts/volume/volumemute.sh ; /home/nick/dotfiles/home-manager/modules/eww/config/scripts/volume/volumemuteon.sh"
+	  :onclick "~/flake/home-manager/eww/config/scripts/volume/volumemute.sh ; ~/flake/home-manager/eww/config/scripts/volume/volumemuteon.sh"
 			(image
 		  :class "volumeMuteButton"
 		  :image-width 19
@@ -136,7 +136,7 @@
 		  :class "bluetoothButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "~/flake/home-manager``/eww/config/images/bluetooth.png"
+		  :path "/home/w8/flake/home-manager/eww/config/images/bluetooth.png"
 		)
 	)
   )

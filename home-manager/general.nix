@@ -6,10 +6,11 @@
       ];
       exec-once = [
         # "waybar"
-        "cd /home/w8/flake/home-manager/eww/config/scripts ; ./master.sh"
+        "/home/w8/flake/home-manager/eww/config/scripts/master.sh"
         "wl-clipboard"
         "hyprpaper"
         "firefox"
+        "udiskie"
       ];
       input = {
         kb_layout = "us";

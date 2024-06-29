@@ -3,6 +3,7 @@
 { 
   imports = [
     ./alacritty.nix
+    ./eww/default.nix
     ./fastfetch.nix
     ./firefox.nix
     ./git.nix
@@ -11,15 +12,15 @@
     ./hyprpaper.nix
     ./kitty.nix
     ./neovim.nix 
-    ./nushell.nix
+    # ./nushell.nix
     ./packages.nix
     ./programs.nix
     ./rofi.nix
     ./starship.nix
+    ./swww.nix
     ./waybar.nix
     ./wezterm.nix
     ./zsh.nix
-    ./eww/default.nix
   ];
   
   home.username = "w8";

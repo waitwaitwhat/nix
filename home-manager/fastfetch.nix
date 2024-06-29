@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       logo = {
-        source = "~/Downloads/logo.jpg";
+        source = "~/Downloads/woman.jpg";
         padding = {
           left = 1;
           right = 3;

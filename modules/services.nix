@@ -15,6 +15,7 @@
       };
     };
     blueman.enable = true;
+    flatpak.enable = true;
     joycond.enable = true;
     logind = {
       extraConfig = ''
