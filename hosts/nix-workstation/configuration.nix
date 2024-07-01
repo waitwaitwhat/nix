@@ -20,5 +20,5 @@
       ../../modules/system.nix
       ../../modules/user.nix
   ];
-  networking.hostname = "nix-laptop";
+  networking.hostname = "nix-workstation";
 }

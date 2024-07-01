@@ -1,7 +1,6 @@
 { pkgs, ... }: 
 {
   networking = {
-    hostName = "nix-laptop";
     networkmanager = { 
       enable = true;
       dns = "systemd-resolved";
