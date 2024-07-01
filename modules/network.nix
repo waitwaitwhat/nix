@@ -5,7 +5,11 @@
     networkmanager = { 
       enable = true;
       dns = "systemd-resolved";
-      wifi.powersave = true;
+      wifi = {
+        backend = "wpa_supplicant";
+        macAddress = "preserve";
+        powersave = true;
+      };
     };
     # wireless.enable = true;
     # nameservers = [ "1.1.1.1" ];

@@ -11,13 +11,13 @@
     ./hyprlock.nix
     ./hyprpaper.nix
     ./kitty.nix
+    ./mpvpaper.nix
     ./neovim.nix 
     # ./nushell.nix
     ./packages.nix
     ./programs.nix
     ./rofi.nix
     ./starship.nix
-    ./swww.nix
     ./waybar.nix
     ./wezterm.nix
     ./zsh.nix
