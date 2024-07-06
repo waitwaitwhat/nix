@@ -16,6 +16,7 @@
     };
     blueman.enable = true;
     flatpak.enable = true;
+    gnome.gnome-keyring.enable = true;
     joycond.enable = true;
     logind = {
       extraConfig = ''

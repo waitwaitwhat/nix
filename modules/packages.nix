@@ -9,6 +9,7 @@
     cmake
     du-dust
     efibootmgr
+    fractal
     freetype
     fzf
     gcc

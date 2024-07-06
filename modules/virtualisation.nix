@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, stable, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -11,6 +11,7 @@
     win-spice
     gnome.adwaita-icon-theme
   ];
+  enviroment.systemPackages = with stable; [ waydroid ];
 
   virtualisation = {
     libvirtd = {
@@ -21,7 +22,6 @@
 	ovmf.packages = [pkgs.OVMFFull.fd ];
       };
     };
-    waydroid.enable = true;
     spiceUSBRedirection.enable = true;
   };
   services.spice-vdagentd.enable = true;
