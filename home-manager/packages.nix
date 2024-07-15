@@ -2,7 +2,6 @@
 
 {
   home.packages = [
-    anki
     brightnessctl
     du-dust
     duf
