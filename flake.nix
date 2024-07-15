@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    stable.url = "nixpkgs/nixos-24.05";
+    stable.url = "github:nixos/nixpkgs/nixos-24.05";
 
     disko = {
       url = "github:nix-community/disko";
@@ -39,7 +39,6 @@
       url = "github:oxalica/rust-overlay";
       inputs = {
         nixpkgs.follows = "nixpkgs";
-        flake-utils.follows = "flake-utils";
       };
     };
     

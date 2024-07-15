@@ -7,11 +7,11 @@
     spice
     spice-gtk
     spice-protocol
+    waydroid
     win-virtio
     win-spice
     gnome.adwaita-icon-theme
   ];
-  enviroment.systemPackages = with stable; [ waydroid ];
 
   virtualisation = {
     libvirtd = {
