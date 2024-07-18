@@ -10,6 +10,7 @@
       ../../modules/hardware.nix
       ./hardware-configuration.nix
       ./disk-config.nix
+      ../../modules/japanese.nix
       ../../modules/network.nix
       ../../modules/packages.nix
       ../../modules/pipewire.nix
