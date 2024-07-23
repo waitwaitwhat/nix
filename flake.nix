@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    stable.url = "github:nixos/nixpkgs/nixos-24.05";
 
     disko = {
       url = "github:nix-community/disko";
@@ -48,11 +47,10 @@
     };
   };
 
-  outputs = { self, nixpkgs, stable, lanzaboote, disko, eza, rust-overlay, sops-nix, ... }@inputs: 
+  outputs = { self, nixpkgs, lanzaboote, disko, eza, rust-overlay, sops-nix, ... }@inputs: 
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-      stable = stable.legacyPackages.${system};
     in
     {
       nixosConfigurations = {

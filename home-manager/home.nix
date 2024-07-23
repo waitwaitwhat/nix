@@ -19,13 +19,13 @@
     ./rofi.nix
     ./starship.nix
     ./waybar.nix
-    ./wezterm.nix
+    # ./wezterm.nix
     ./zsh.nix
   ];
   
   home.username = "w8";
   home.homeDirectory = "/home/w8";
-  home.stateVersion = "23.11"; # Please read the comment before changing.
+  home.stateVersion = "24.05"; # Please read the comment before changing.
   
   nixpkgs = {
     config = {

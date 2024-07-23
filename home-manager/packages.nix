@@ -2,7 +2,7 @@
 
 {
   home.packages = [
-    brightnessctl
+    # brightnessctl
     du-dust
     duf
     eww
