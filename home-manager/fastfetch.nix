@@ -12,7 +12,7 @@
       };
       display = {
         separator = " ";
-        keyWidth = 14;
+        key.width = 14;
       };
       modules = [
         {

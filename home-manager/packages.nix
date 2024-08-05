@@ -1,8 +1,9 @@
 { config, pkgs, inputs, ... }:
 
 {
-  home.packages = [
-    # brightnessctl
+  home.packages = with pkgs; [
+    brightnessctl
+    barrier
     du-dust
     duf
     eww
@@ -32,6 +33,7 @@
     vulnix
     wl-clipboard
     yt-dlp
+    yubioath-flutter
     inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
   ];
 }

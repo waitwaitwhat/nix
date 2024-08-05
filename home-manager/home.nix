@@ -2,7 +2,7 @@
 
 { 
   imports = [
-    ./alacritty.nix
+    # ./alacritty.nix
     ./eww/default.nix
     ./fastfetch.nix
     ./firefox.nix
@@ -11,15 +11,15 @@
     ./hyprlock.nix
     ./hyprpaper.nix
     ./kitty.nix
-    ./mpvpaper.nix
+    # ./mpvpaper.nix
     ./neovim.nix 
     # ./nushell.nix
     ./packages.nix
     ./programs.nix
     ./rofi.nix
     ./starship.nix
-    ./waybar.nix
-    # ./wezterm.nix
+    # ./waybar.nix
+    ./wezterm.nix
     ./zsh.nix
   ];
   
@@ -40,8 +40,8 @@
   };
 
   home.sessionVariables = {
-    WLR_NO_HARDWARE_CURSORS = "1";
-    NIXOS_OZONE_WL = "1";
+    # WLR_NO_HARDWARE_CURSORS = "1";
+    # NIXOS_OZONE_WL = "1";
   };
 
   programs.home-manager.enable = true;

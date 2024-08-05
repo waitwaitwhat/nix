@@ -14,6 +14,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    hyprcursor-phinger.url = "github:jappie3/hyprcursor-phinger";
+
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
     hyprland-contrib = {
@@ -26,8 +28,9 @@
       owner = "lexical-lsp";
       repo = "lexical";
     };
+
   };
-  outputs = { nixpkgs, home-manager, hyprland, ... }@inputs:
+  outputs = { nixpkgs, home-manager, hyprland, hyprcursor-phinger, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -40,6 +43,7 @@
         # the path to your home.nix.
         modules = [ 
           ./home.nix
+          hyprcursor-phinger.homeManagerModules.hyprcursor-phinger
           hyprland.homeManagerModules.default
           {wayland.windowManager.hyprland.enable = true;}
         ];
