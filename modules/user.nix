@@ -5,6 +5,6 @@
     isNormalUser = true;
     description = "w8";
     shell = pkgs.zsh;
-    extraGroups = [ "input" "video" "networkmanager" "wheel" "libvirtd" "ratbagd" ];
+    extraGroups = [ "input" "video" "networkmanager" "wheel" "libvirtd" "ratbagd" "wireshark" ];
   };
 }

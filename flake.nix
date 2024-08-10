@@ -33,7 +33,12 @@
       url = "github:nix-community/lanzaboote/v0.3.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    
+   
+    nixos-cosmic = {
+      url = "github:lilyinstarlight/nixos-cosmic";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs = {
@@ -47,7 +52,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, lanzaboote, disko, eza, rust-overlay, sops-nix, ... }@inputs: 
+  outputs = { self, nixpkgs, lanzaboote, nixos-cosmic, disko, eza, rust-overlay, sops-nix, ... }@inputs: 
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -64,13 +69,20 @@
             inputs.home-manager.nixosModules.default
 	          lanzaboote.nixosModules.lanzaboote
 	          sops-nix.nixosModules.sops
+            nixos-cosmic.nixosModules.default
 	          ({ pkgs, lib, ... }: {
               nixpkgs.overlays = [ rust-overlay.overlays.default ];
+
               environment.systemPackages = [
               # For debugging and troubleshooting Secure Boot.
                 pkgs.sbctl
                 pkgs.rust-bin.stable.latest.default
               ];
+              
+              nix.settings = {
+                substituters = [ "https://cosmic.cachix.org/" ];
+                trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
+              };
 
               # Lanzaboote currently replaces the systemd-boot module.
               # This setting is usually set to true in configuration.nix

@@ -7,12 +7,12 @@
       xkb.layout = "us";
       xkb.variant = "";
       #libinput.enable = true;
-      desktopManager.plasma6.enable = true;
-      displayManager = {
-	      lightdm.enable = false;
-	      gdm.enable = false;
-        sddm.enable = true;
-      };
+      # desktopManager.plasma6.enable = true;
+      # displayManager = {
+	      # lightdm.enable = false;
+	      # gdm.enable = false;
+        # sddm.enable = true;
+      # };
     };
     blueman.enable = true;
     flatpak.enable = true;

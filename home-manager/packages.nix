@@ -30,8 +30,11 @@
     (pkgs.discord.override {withVencord = true;})
     vesktop
     vlc
+    vscodium
     vulnix
+    # wireshark
     wl-clipboard
+    wootility
     yt-dlp
     yubioath-flutter
     inputs.hyprland-contrib.packages.${pkgs.system}.grimblast

@@ -14,6 +14,7 @@
       enable = true;
       xwayland.enable = true;
     };
+    # ladybird.enable = true;
     mtr.enable = true;
     nh = {
       enable = true;
@@ -30,5 +31,8 @@
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
     };
+    wireshark = {
+      enable = true;
+      };
   };
 }

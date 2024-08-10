@@ -14,7 +14,10 @@
     freetype
     fzf
     gcc
+    gdb
+    gf
     libsForQt5.dolphin
+    llvm_18
     ninja
     nix-output-monitor
     nvd
@@ -29,6 +32,8 @@
     wget
     wineWowPackages.stable
     winetricks
+    wireshark
+    wireshark-cli
     xdg-desktop-portal-gtk
     zip
   ];
