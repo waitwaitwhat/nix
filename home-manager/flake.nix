@@ -23,12 +23,7 @@
       inputs.nixpkgs.follows = "hyprland/nixpkgs";
     };
 
-    lexical = {
-      type = "github";
-      owner = "lexical-lsp";
-      repo = "lexical";
-    };
-
+    lexical.url = "github:lexical-lsp/lexical?ref=v0.6.1";
   };
   outputs = { nixpkgs, home-manager, hyprland, hyprcursor-phinger, ... }@inputs:
     let
@@ -50,8 +45,8 @@
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
       };
-      nest-nvim = pkgs.callPackage ./pkgs/nest-nvim.nix {};
-      icon-picker-nvim = pkgs.callPackage ./pkgs/icon-picker.nix {};
-      transparent-nvim = pkgs.callPackage ./pkgs/transparent-nvim.nix {};
+      # nest-nvim = pkgs.callPackage ./pkgs/nest-nvim.nix {};
+      # icon-picker-nvim = pkgs.callPackage ./pkgs/icon-picker.nix {};
+      # transparent-nvim = pkgs.callPackage ./pkgs/transparent-nvim.nix {};
     };
 }

@@ -14,13 +14,15 @@
     freetype
     fzf
     gcc
-    gdb
-    gf
+    # gdb
+    # gf
+    iaito
     libsForQt5.dolphin
     llvm_18
     ninja
     nix-output-monitor
     nvd
+    radare2
     rustup
     sqlite
     sqlitebrowser

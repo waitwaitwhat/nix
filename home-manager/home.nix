@@ -3,6 +3,7 @@
 { 
   imports = [
     # ./alacritty.nix
+    ./emacs.nix
     ./eww/default.nix
     ./fastfetch.nix
     ./firefox.nix
@@ -19,7 +20,7 @@
     ./rofi.nix
     ./starship.nix
     # ./waybar.nix
-    ./wezterm.nix
+    # ./wezterm.nix
     ./zsh.nix
   ];
   
