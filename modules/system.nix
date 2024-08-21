@@ -1,6 +1,5 @@
-{ pkgs, lib, inputs, ...}: 
+{ pkgs, lib, inputs, ... }:
 {
-  # imports = [ inputs.nix-gaming.nixosModules.default ];
   nix = {
     settings = {
       trusted-users = [ "root" "w8" ];
@@ -8,19 +7,8 @@
       experimental-features = [ "nix-command" "flakes" ];
     };
   };
-  nixpkgs = {
-    # overlays = [
-      # self.overlays.default
-      # inputs.nur.overlay
-    # ];
-  };
 
-  environment.systemPackages = with pkgs; [
-    wget
-    git
-  ];
-
-  time.timeZone = "Australia/Melbourne";
+  time.timeZone = "Asia/Tokyo";
   i18n = {
     defaultLocale = "en_AU.UTF-8";
     extraLocaleSettings = {
@@ -35,6 +23,8 @@
       LC_TIME = "en_AU.UTF-8";
     };
   };
+
   nixpkgs.config.allowUnfree = true;
-  system.stateVersion = "23.11";
+
+  system.stateVersion = "24.05";
 }

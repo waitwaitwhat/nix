@@ -19,7 +19,6 @@
     piper
     pass-wayland
     parsec-bin
-    ripgrep
     sbctl
     spotify
     slack

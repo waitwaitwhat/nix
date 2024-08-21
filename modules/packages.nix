@@ -8,12 +8,15 @@
     chafa
     clang
     cmake
+    coreutils
     du-dust
     efibootmgr
+    fd
     fractal
     freetype
     fzf
     gcc
+    git
     # gdb
     # gf
     iaito
@@ -23,6 +26,7 @@
     nix-output-monitor
     nvd
     radare2
+    ripgrep
     rustup
     sqlite
     sqlitebrowser

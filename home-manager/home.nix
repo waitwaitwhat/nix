@@ -3,7 +3,7 @@
 { 
   imports = [
     # ./alacritty.nix
-    ./emacs.nix
+    ./emacs
     ./eww/default.nix
     ./fastfetch.nix
     ./firefox.nix
