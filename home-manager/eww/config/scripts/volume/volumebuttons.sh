@@ -2,7 +2,7 @@
 
 trap "echo 'Script terminated'; exit" SIGTERM SIGINT
 
-iconBasePath="~/flake/home-manager//eww/config/images"
+iconBasePath="~/nix/home-manager//eww/config/images"
 
 volumeDownIconNormal="minus.png"
 volumeDownIconMin="minusmax.png"
