@@ -32,4 +32,4 @@ while ! eww active-windows | grep -q "centerPanel"; do
 done
 
 ensure_running "~/nix/home-manager/eww/config/scripts/workspaces.sh"
-ensure_running "~/nix/home-manager//eww/config/scripts/volume/volumebuttons.sh"
+ensure_running "~/nix/home-manager/eww/config/scripts/volume/volumebuttons.sh"

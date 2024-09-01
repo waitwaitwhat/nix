@@ -1,4 +1,4 @@
-(defpoll display :interval "0.1s" "/home/w8/flake/home-manager/eww/config/scripts/volume/volumedisplay.sh")
+(defpoll display :interval "0.1s" "/home/w8/nix/home-manager/eww/config/scripts/volume/volumedisplay.sh")
 (defvar volumeUpIcon "/home/w8/nix/home-manager/eww/config/images/plus.png")
 (defvar volumeDownIcon "/home/w8/nix/home-manager/eww/config/images/minus.png")
 (defvar volumeMuteIcon "/home/w8/nix/home-manager/eww/config/images/mute.png")
@@ -117,7 +117,7 @@
 	  :class "volumeMute"
 	  :cursor "pointer"
 	  :width 25
-	  :onclick "~/nix/home-manager/eww/config/scripts/volume/volumemute.sh ; ~/flake/home-manager/eww/config/scripts/volume/volumemuteon.sh"
+	  :onclick "~/nix/home-manager/eww/config/scripts/volume/volumemute.sh ; ~/nix/home-manager/eww/config/scripts/volume/volumemuteon.sh"
 			(image
 		  :class "volumeMuteButton"
 		  :image-width 19

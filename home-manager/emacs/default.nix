@@ -24,9 +24,9 @@
 
 let
   # 'latte is light, 'frappe, 'macchiato, or 'mocha are dark
-  catppuccinFlavor =
-    if osConfig.masterOptions.joe.lightMode.enable then "latte" else "mocha";
-  joe-faces = import ./joe-faces.nix { inherit osConfig lib; };
+  #  catppuccinFlavor =
+  #   if osConfig.masterOptions.joe.lightMode.enable then "latte" else "mocha";
+  # joe-faces = import ./joe-faces.nix { inherit osConfig lib; };
   prelude = builtins.readFile ./lisp/prelude.el;
   usePackage = import ./packages.nix { inherit lib pkgs; };
 in {
@@ -49,12 +49,12 @@ in {
     usePackageVerbose = true;
     inherit usePackage;
 
-    prelude = ''
-      ${prelude}
-      (setq catppuccin-flavor '${catppuccinFlavor})
-      (setq ob-mermaid-cli-path "${pkgs.mermaid-cli}/bin/mmdc")      
-      ${joe-faces}      
-    '';
+    # prelude = ''
+    #   ${prelude}
+    #   (setq catppuccin-flavor '${catppuccinFlavor})
+    #   (setq ob-mermaid-cli-path "${pkgs.mermaid-cli}/bin/mmdc")      
+    #   ${joe-faces}      
+    # '';
   };
 }
 

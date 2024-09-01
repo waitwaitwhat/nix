@@ -131,7 +131,7 @@
 		  :class "obsidianButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "/nix/w8/flake/home-manager/eww/config/images/obsidian.png"
+		  :path "/home/w8/nix/home-manager/eww/config/images/obsidian.png"
 		)
 	)
   )
@@ -147,7 +147,7 @@
 		  :class "vscodeButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "/nix/w8/flake/home-manager/eww/config/images/vscode.png"
+		  :path "/home/w8/nix/home-manager/eww/config/images/vscode.png"
 		)
 	)
   )
@@ -163,7 +163,7 @@
 		  :class "discordButton"
 		  :image-width 20
 		  :image-height 20
-		  :path "/nix/w8/flake/home-manager/eww/config/images/discord.png"
+		  :path "/home/w8/nix/home-manager/eww/config/images/discord.png"
 		)
 	)
   )
