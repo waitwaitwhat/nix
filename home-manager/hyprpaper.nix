@@ -6,10 +6,10 @@
     settings = {
       ipc = "on";
       preload = [
-        "~/nix/wallpapers/wallhaven-85wjry.png"
+        "~/nix/wallpapers/91199411_p0.png"
       ];
       wallpaper = [
-        "eDP-1,~/nix/wallpapers/wallhaven-85wjry.png"
+        "eDP-1,~/nix/wallpapers/91199411_p0.png"
       ];
     };
   };
