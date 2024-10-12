@@ -11,6 +11,7 @@
     ghidra
     grim
     keepassxc
+    lutris
     ncdu
     niv
     # nix-prefetch-script
@@ -26,7 +27,10 @@
     thunderbird
     tor-browser-bundle-bin
     turso-cli
-    (pkgs.discord.override {withVencord = true;})
+    (pkgs.discord-canary.override {
+      withVencord = true;
+      # withOpenAsar = true;
+    })
     vesktop
     vlc
     vscodium

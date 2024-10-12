@@ -100,23 +100,38 @@
               };
             })
           ];
-       };
+        };
 
-       nix-workstation = nixpkgs.lib.nixosSystem {
-          specialArgs = {inherit inputs;};
+      	nix-workstation = nixpkgs.lib.nixosSystem {
+          specialArgs = {
+            inherit inputs;
+          };
           modules = [
             ./hosts/nix-workstation/configuration.nix
             disko.nixosModules.disko
             inputs.home-manager.nixosModules.default
 	          lanzaboote.nixosModules.lanzaboote
 	          sops-nix.nixosModules.sops
+            nixos-cosmic.nixosModules.default
 	          ({ pkgs, lib, ... }: {
               nixpkgs.overlays = [ rust-overlay.overlays.default ];
+
               environment.systemPackages = [
               # For debugging and troubleshooting Secure Boot.
                 pkgs.sbctl
                 pkgs.rust-bin.stable.latest.default
               ];
+              
+              nix.settings = {
+                substituters = [ 
+                  "https://cosmic.cachix.org/"
+                  "https://ezkea.cachix.org"
+                ];
+                trusted-public-keys = [ 
+                  "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" 
+                  "ezkea.cachix.org-1:ioBmUbJTZIKsHmWWXPe1FSFbeVe+afhfgqgTSNd34eI="
+                ];
+              };
 
               # Lanzaboote currently replaces the systemd-boot module.
               # This setting is usually set to true in configuration.nix

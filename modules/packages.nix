@@ -22,12 +22,14 @@
     iaito
     libsForQt5.dolphin
     llvm_18
+    mangohud
     ninja
     nix-output-monitor
     nvd
     radare2
     ripgrep
     rustup
+    steamPackages.steam-runtime
     sqlite
     sqlitebrowser
     udiskie
@@ -35,6 +37,7 @@
     usbutils
     vlc
     vim
+    vulkan-tools
     wget
     wineWowPackages.stable
     winetricks

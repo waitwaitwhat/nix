@@ -2,7 +2,9 @@
   wayland.windowManager.hyprland = {
     settings = {
       monitor = [
-        "eDP-1, 1920x1080@60, 0x0, 1"
+        "DP-2, 1920x1080@240, 0x0, 1"
+        "HDMI-A-1, 1600x900@60, 1920x0, 1"
+        "DVI-D-1, 1680x1050@60, 3520x0, 1, transform, 1"
       ];
       exec-once = [
         # "waybar"
@@ -19,6 +21,7 @@
         force_no_accel = true;
       };
       general = {
+        allow_tearing = true;
         gaps_in = 10;
         gaps_out = 20;
         border_size = 4;
@@ -84,6 +87,7 @@
     };
     extraConfig = ''
       bind =, Print, exec, grim -g "$(slurp)" - | satty -f - --fullscreen --output-filename ~/Pictures/screenshots/$(date '+%Y%m%d-%H:%M:%S').png
+      windowrulev2 = immediate, class:^(cs2)$
     '';
   };
 }
