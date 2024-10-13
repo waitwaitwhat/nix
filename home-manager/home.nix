@@ -14,7 +14,7 @@
     ./kitty.nix
     # ./mpvpaper.nix
     ./neovim.nix 
-    # ./nushell.nix
+    ./nushell.nix
     ./packages.nix
     ./programs.nix
     ./rofi.nix
