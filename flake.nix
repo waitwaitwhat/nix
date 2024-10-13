@@ -112,7 +112,7 @@
             inputs.home-manager.nixosModules.default
 	          lanzaboote.nixosModules.lanzaboote
 	          sops-nix.nixosModules.sops
-            nixos-cosmic.nixosModules.default
+            
 	          ({ pkgs, lib, ... }: {
               nixpkgs.overlays = [ rust-overlay.overlays.default ];
 
@@ -124,7 +124,7 @@
               
               nix.settings = {
                 substituters = [ 
-                  "https://cosmic.cachix.org/"
+                  "https://cosmic.cachix.org"
                   "https://ezkea.cachix.org"
                 ];
                 trusted-public-keys = [ 
@@ -147,6 +147,7 @@
                 pkiBundle = "/etc/secureboot";
               };
             })
+            nixos-cosmic.nixosModules.default
           ];
         };
     };

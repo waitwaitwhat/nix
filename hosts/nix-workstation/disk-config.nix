@@ -3,10 +3,10 @@
   {
     disk =
     {
-      sdb =
+      nvme0n1 =
       {
         type = "disk";
-        device = "/dev/sdb";
+        device = "/dev/nvme0n1";
         content =
         {
           type = "gpt";

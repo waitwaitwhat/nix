@@ -19,7 +19,7 @@
     obs-studio
     piper
     pass-wayland
-    parsec-bin
+    # parsec-bin
     sbctl
     spotify
     slack

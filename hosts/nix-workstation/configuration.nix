@@ -32,12 +32,6 @@
       options = [ "rw" "user" "exec" "umask=000" ]; 
       noCheck = true;
     };
-    "/home/w8/nvme" = { 
-      device = "/dev/disk/by-uuid/242c5a63-e4e1-4c31-8a5d-a833d548743e"; 
-      fsType = "ext4";
-      options = [ "user" ];
-      noCheck = false;
-    };
     "/home/w8/hd" = { 
       device = "UUID=D8A67C98A67C7938"; 
       fsType = "lowntfs-3g"; 
