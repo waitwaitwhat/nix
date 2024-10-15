@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    ags
     brightnessctl
     barrier
     du-dust
@@ -20,6 +21,7 @@
     piper
     pass-wayland
     # parsec-bin
+    python312Packages.openrazer
     sbctl
     spotify
     slack

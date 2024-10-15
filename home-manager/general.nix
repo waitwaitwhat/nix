@@ -10,9 +10,10 @@
         # "waybar"
         "/home/w8/nix/home-manager/eww/config/scripts/master.sh"
         "wl-clipboard"
-        "hyprpaper"
+       "hyprpaper"
         "firefox"
         "udiskie"
+        "xrandr --output DP-2 --primary"
       ];
       input = {
         kb_layout = "us";

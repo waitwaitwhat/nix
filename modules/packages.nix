@@ -26,6 +26,7 @@
     ninja
     nix-output-monitor
     nvd
+    python312Packages.openrazer
     radare2
     ripgrep
     rustup

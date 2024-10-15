@@ -3,7 +3,7 @@ _: {
     "$mainMod" = "SUPER";
     bind = [
       "$mainMod, A, exec, kitty"
-      "$mainMod, D, exec, discord"
+      "$mainMod, D, exec, vesktop"
       "$mainMod, C, killactive,"
       "$mainMod, E, exec, cosmic-files"
       "$mainMod, F, exec, firefox"
