@@ -150,6 +150,37 @@
             nixos-cosmic.nixosModules.default
           ];
         };
+
+        macbook = nixpkgs.lib.nixosSystem {
+          specialArgs = {
+            inherit inputs;
+          };
+          modules = [
+            ./hosts/macbook/configuration.nix
+            disko.nixosModules.disko
+            inputs.home-manager.nixosModules.default
+	          sops-nix.nixosModules.sops
+	          ({ pkgs, lib, ... }: {
+              nixpkgs.overlays = [ rust-overlay.overlays.default ];
+
+              environment.systemPackages = [
+                pkgs.rust-bin.stable.latest.default
+              ];
+              
+              nix.settings = {
+                substituters = [ 
+                  "https://cosmic.cachix.org"
+                  "https://ezkea.cachix.org"
+                ];
+                trusted-public-keys = [ 
+                  "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" 
+                  "ezkea.cachix.org-1:ioBmUbJTZIKsHmWWXPe1FSFbeVe+afhfgqgTSNd34eI="
+                ];
+	      };
+            })
+            nixos-cosmic.nixosModules.default
+          ];
+        };
     };
   };
 }
