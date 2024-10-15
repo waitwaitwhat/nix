@@ -2,7 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    ags
     brightnessctl
     barrier
     du-dust

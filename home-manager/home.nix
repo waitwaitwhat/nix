@@ -22,8 +22,19 @@
     # ./waybar.nix
     ./wezterm.nix
     ./zsh.nix
+    inputs.ags.homeManagerModules.default
   ];
   
+  programs.ags = { # make a separate module later.
+    enable = true;
+    # configDir = ../ags;
+    extraPackages =  with pkgs; [
+      gtksourceview
+      webkitgtk
+      accountsservice
+    ];
+  };
+
   home.username = "w8";
   home.homeDirectory = "/home/w8";
   home.stateVersion = "24.05"; # Please read the comment before changing.
