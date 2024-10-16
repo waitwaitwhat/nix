@@ -8,7 +8,7 @@
       ];
       exec-once = [
         # "waybar"
-        "/home/w8/nix/home-manager/eww/config/scripts/master.sh"
+        "ags -c ~/.config/ags/config.js &"
         "wl-clipboard"
        "hyprpaper"
         "firefox"
@@ -23,9 +23,9 @@
       };
       general = {
         allow_tearing = true;
-        gaps_in = 10;
-        gaps_out = 20;
-        border_size = 4;
+        gaps_in = 2;
+        gaps_out = 7;
+        border_size = 6;
         "col.active_border" = "rgb(7dcfff) rgb(c0caf5)";
         "col.inactive_border" = "rgb(24283b)";
 

@@ -36,6 +36,7 @@
     vlc
     vscodium
     vulnix
+    wezterm
     # wireshark
     wl-clipboard
     wootility

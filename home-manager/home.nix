@@ -20,7 +20,7 @@
     ./rofi.nix
     ./starship.nix
     # ./waybar.nix
-    ./wezterm.nix
+    # ./wezterm.nix
     ./zsh.nix
     inputs.ags.homeManagerModules.default
   ];

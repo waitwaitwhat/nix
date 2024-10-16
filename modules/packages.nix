@@ -21,6 +21,7 @@
     # gf
     iaito
     libsForQt5.dolphin
+    libsForQt5.qtstyleplugin-kvantum
     llvm_18
     mangohud
     ninja

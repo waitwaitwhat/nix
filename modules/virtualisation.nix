@@ -7,7 +7,6 @@
     spice
     spice-gtk
     spice-protocol
-    waydroid
     win-virtio
     win-spice
     gnome.adwaita-icon-theme
@@ -23,6 +22,7 @@
       };
     };
     spiceUSBRedirection.enable = true;
+    waydroid.enable = true;
   };
   services.spice-vdagentd.enable = true;
 }
