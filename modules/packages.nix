@@ -20,6 +20,7 @@
     # gdb
     # gf
     iaito
+    libsForQt5.qt5ct
     libsForQt5.dolphin
     libsForQt5.qtstyleplugin-kvantum
     llvm_18

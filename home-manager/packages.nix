@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs; [
     brightnessctl
-    barrier
+    carapace
     du-dust
     duf
     eww
@@ -30,7 +30,7 @@
     turso-cli
     (pkgs.discord-canary.override {
       withVencord = true;
-      # withOpenAsar = true;
+      withOpenASAR = true;
     })
     vesktop
     vlc

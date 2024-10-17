@@ -35,6 +35,14 @@
     ];
   };
 
+  gtk = {
+    enable = true;
+    theme = {
+      name = "adw-gtk3-dark";
+      package = pkgs.adw-gtk3;
+    };
+  };
+
   home.username = "w8";
   home.homeDirectory = "/home/w8";
   home.stateVersion = "24.05"; # Please read the comment before changing.
