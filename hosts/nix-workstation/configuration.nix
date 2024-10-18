@@ -23,7 +23,7 @@
       ../../modules/user.nix
   ];
   
-  boot.supportedFilesystems = [ "ntfs" ];
+ boot.supportedFilesystems = [ "ntfs" ];
   
   fileSystems = {
     "/home/w8/windows" = { 

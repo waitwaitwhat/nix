@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    anki
+    # anki
     # authy
     cargo
     chafa
@@ -20,9 +20,9 @@
     # gdb
     # gf
     iaito
-    libsForQt5.qt5ct
-    libsForQt5.dolphin
-    libsForQt5.qtstyleplugin-kvantum
+    # libsForQt5.qt5ct
+    # libsForQt5.dolphin
+    # libsForQt5.qtstyleplugin-kvantum
     llvm_18
     mangohud
     ninja
@@ -32,7 +32,7 @@
     radare2
     ripgrep
     rustup
-    steamPackages.steam-runtime
+    # steamPackages.steam-runtime
     sqlite
     sqlitebrowser
     udiskie
