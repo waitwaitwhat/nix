@@ -7,6 +7,7 @@
       ../../modules/bootloader.nix
       ../../modules/cosmic.nix
       ../../modules/font.nix
+      ../../modules/gpupassthrough.nix
       # ../../modules/greetd.nix
       ../../modules/hardware.nix
       ./hardware-configuration.nix
@@ -19,6 +20,7 @@
       ../../modules/virtualisation.nix
       ../../modules/security.nix
       ../../modules/services.nix
+      ../../modules/specialisation.nix
       ../../modules/system.nix
       ../../modules/user.nix
   ];
@@ -26,18 +28,18 @@
  boot.supportedFilesystems = [ "ntfs" ];
   
   fileSystems = {
-    "/home/w8/windows" = { 
-      device = "UUID=FE5ABAA35ABA57DB"; 
-      fsType = "lowntfs-3g"; 
-      options = [ "rw" "user" "exec" "umask=000" ]; 
-      noCheck = true;
-    };
-    "/home/w8/hd" = { 
-      device = "UUID=D8A67C98A67C7938"; 
-      fsType = "lowntfs-3g"; 
-      options = [ "rw" "user" "exec" "umask=000" ]; 
-      noCheck = true;
-    };
+    # "/home/w8/windows" = { 
+      # device = "UUID=FE5ABAA35ABA57DB"; 
+      # fsType = "lowntfs-3g"; 
+      # options = [ "rw" "user" "exec" "umask=000" ]; 
+      # noCheck = true;
+    # };
+    # "/home/w8/hd" = { 
+      # device = "UUID=D8A67C98A67C7938"; 
+      # fsType = "lowntfs-3g"; 
+      # options = [ "rw" "user" "exec" "umask=000" ]; 
+      # noCheck = true;
+    # };
     "/home/w8/steam" = 
     { device = "/dev/disk/by-uuid/49543e1a-17cb-4d8d-bf48-b320f3bec2ef";
       fsType = "btrfs";
@@ -45,7 +47,6 @@
   };
 
   networking.hostName = "nix-workstation";
-
   services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia = {
     modesetting.enable = true;

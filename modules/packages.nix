@@ -9,6 +9,7 @@
     clang
     cmake
     coreutils
+    dmidecode
     du-dust
     efibootmgr
     fd
@@ -30,6 +31,7 @@
     nvd
     python312Packages.openrazer
     radare2
+    remmina
     ripgrep
     rustup
     # steamPackages.steam-runtime

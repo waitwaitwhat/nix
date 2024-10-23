@@ -26,6 +26,10 @@
 	      HandleLidSwitch=hibernate
       '';
     };
+    services.minecraft-server = { 
+      enable = true;
+      eula = true;
+    };
     openssh = {
       enable = true;
       settings = {

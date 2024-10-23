@@ -19,7 +19,8 @@
     obs-studio
     piper
     pass-wayland
-    # parsec-bin
+    parsec-bin
+    prismlauncher
     python312Packages.openrazer
     sbctl
     spotify
@@ -34,7 +35,7 @@
     })
     vesktop
     vlc
-    vscodium
+    vscode
     vulnix
     wezterm
     # wireshark
