@@ -14,7 +14,7 @@
     # nameservers = [ "1.1.1.1" ];
     firewall = {
       enable = true;
-      allowedTCPPorts = [ 22 80 ];
+      allowedTCPPorts = [ 22 80 7067 ];
       # allowedUDPPorts = [ ];
       # allowedUDPPortRanges = [
         # { from = 4000; to = 4007; }
@@ -24,7 +24,7 @@
     # proxy = {
       # default = "http://user:password@proxy:port/";
       # noProxy = "127.0.0.1,localhost,internal.domain";
-    # }
+    # };
   };
 
   environment.systemPackages = with pkgs; [

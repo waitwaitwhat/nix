@@ -23,9 +23,12 @@
       ../../modules/specialisation.nix
       ../../modules/system.nix
       ../../modules/user.nix
+      inputs.nix-minecraft.nixosModules.minecraft-servers
   ];
   
- boot.supportedFilesystems = [ "ntfs" ];
+  nixpkgs.overlays = [ inputs.nix-minecraft.overlay ];
+
+  boot.supportedFilesystems = [ "ntfs" ];
   
   fileSystems = {
     # "/home/w8/windows" = { 

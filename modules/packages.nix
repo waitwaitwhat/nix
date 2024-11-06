@@ -9,6 +9,7 @@
     clang
     cmake
     coreutils
+    dotnet-sdk_8
     dmidecode
     du-dust
     efibootmgr
@@ -38,6 +39,7 @@
     sqlite
     sqlitebrowser
     udiskie
+    unrar
     unzip
     usbutils
     vlc

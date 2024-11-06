@@ -112,11 +112,10 @@
             ./hosts/nix-workstation/configuration.nix
             disko.nixosModules.disko
             inputs.home-manager.nixosModules.default
-            inputs.nix-minecraft.nixosModules.minecraft-servers
 	          lanzaboote.nixosModules.lanzaboote
 	          sops-nix.nixosModules.sops
 	          ({ pkgs, lib, ... }: {
-              nixpkgs.overlays = [ 'rust-overlay.overlays.default' 'inputs.nix-minecraft.overlay' ];
+              nixpkgs.overlays = [ rust-overlay.overlays.default ];
 
               environment.systemPackages = [
               # For debugging and troubleshooting Secure Boot.

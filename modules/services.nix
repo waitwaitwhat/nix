@@ -26,7 +26,7 @@
 	      HandleLidSwitch=hibernate
       '';
     };
-    services.minecraft-server = { 
+    minecraft-server = { 
       enable = true;
       eula = true;
     };
@@ -78,6 +78,7 @@
     };
   };
   environment.sessionVariables = {
+    DOTNET_ROOT = "${pkgs.dotnet-sdk_8}";
     WLR_NO_HARDWARE_CURSORS = "1";
     NIXOS_OZONE_WL = "1";
   };
