@@ -3,6 +3,6 @@
 {
   fonts.packages = with pkgs; [
     font-awesome
-    (nerdfonts.override { fonts = [ "Iosevka" ]; })
+    nerd-fonts.iosevka
   ];
 } 

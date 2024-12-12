@@ -10,13 +10,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     
-    eza = {
-      url = "github:eza-community/eza";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        rust-overlay.follows = "rust-overlay";
-      };
-    };
+    # eza = {
+      # url = "github:eza-community/eza";
+      # inputs = {
+        # nixpkgs.follows = "nixpkgs";
+        # rust-overlay.follows = "rust-overlay";
+      # };
+    # };
     
     firefox-addons = {
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
@@ -55,7 +55,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, lanzaboote, nixos-cosmic, disko, eza, rust-overlay, sops-nix, ... }@inputs: 
+  outputs = { self, nixpkgs, lanzaboote, nixos-cosmic, disko, rust-overlay, sops-nix, ... }@inputs: 
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -120,7 +120,6 @@
               environment.systemPackages = [
               # For debugging and troubleshooting Secure Boot.
                 pkgs.sbctl
-                pkgs.rust-bin.stable.latest.default
               ];
               
               nix.settings = {

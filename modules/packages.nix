@@ -4,12 +4,12 @@
   environment.systemPackages = with pkgs; [
     # anki
     # authy
-    cargo
+    # cargo
     chafa
     clang
     cmake
     coreutils
-    dotnet-sdk_8
+    # dotnet-sdk_8
     dmidecode
     du-dust
     efibootmgr
@@ -34,7 +34,7 @@
     radare2
     remmina
     ripgrep
-    rustup
+    # rustup
     # steamPackages.steam-runtime
     sqlite
     sqlitebrowser
