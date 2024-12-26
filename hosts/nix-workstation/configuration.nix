@@ -3,11 +3,11 @@
 {
   imports =
     [
-      ../../modules/aagl.nix
+      # ../../modules/aagl.nix
       ../../modules/bootloader.nix
       ../../modules/cosmic.nix
       ../../modules/font.nix
-      ../../modules/gpupassthrough.nix
+      # ../../modules/gpupassthrough.nix
       # ../../modules/greetd.nix
       ../../modules/hardware.nix
       ./hardware-configuration.nix
@@ -20,7 +20,7 @@
       ../../modules/virtualisation.nix
       ../../modules/security.nix
       ../../modules/services.nix
-      ../../modules/specialisation.nix
+      # ../../modules/specialisation.nix
       ../../modules/system.nix
       ../../modules/user.nix
       inputs.nix-minecraft.nixosModules.minecraft-servers

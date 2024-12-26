@@ -12,5 +12,6 @@
       enable = true;
       enable32Bit = true;
     };
+    wooting.enable = true;
   };
 }

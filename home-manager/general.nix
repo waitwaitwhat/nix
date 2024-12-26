@@ -3,12 +3,12 @@
     settings = {
       monitor = [
         "DP-2, 1920x1080@240, 0x0, 1"
-        "HDMI-A-1, 1600x900@60, 1920x0, 1"
+        "HDMI-A-3, 1600x900@60, 1920x0, 1"
         "DVI-D-1, 1680x1050@60, 3520x0, 1, transform, 1"
       ];
       exec-once = [
         # "waybar"
-        "ags -c ~/.config/ags/config.js &"
+        "ags run"
         "wl-clipboard"
        "hyprpaper"
         "firefox"

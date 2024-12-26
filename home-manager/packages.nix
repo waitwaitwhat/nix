@@ -3,7 +3,9 @@
 {
   home.packages = with pkgs; [
     brightnessctl
+    calibre
     carapace
+    dotnetCorePackages.dotnet_9.runtime
     du-dust
     duf
     eww
@@ -40,7 +42,6 @@
     wezterm
     # wireshark
     wl-clipboard
-    wootility
     yt-dlp
     yubioath-flutter
     inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
