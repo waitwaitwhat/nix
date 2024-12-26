@@ -4,7 +4,7 @@
   services = {
     xserver = {
       enable = true;
-      xkb.layout = "us";
+      xkb.layout = "us,ara";
       xkb.variant = "";
       #libinput.enable = true;
       # desktopManager.plasma6.enable = true;
@@ -78,7 +78,6 @@
     };
   };
   environment.sessionVariables = {
-    DOTNET_ROOT = "${pkgs.dotnet-sdk_8}";
     WLR_NO_HARDWARE_CURSORS = "1";
     NIXOS_OZONE_WL = "1";
   };

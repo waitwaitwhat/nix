@@ -22,6 +22,9 @@
       LC_TELEPHONE = "en_AU.UTF-8";
       LC_TIME = "en_AU.UTF-8";
     };
+    supportedLocales = [
+      "ar_SA.UTF-8/UTF-8"
+    ];
   };
 
   nixpkgs.config.allowUnfree = true;
