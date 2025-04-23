@@ -43,7 +43,7 @@
     # wireshark
     wl-clipboard
     yt-dlp
-    yubioath-flutter
+    # yubioath-flutter
     inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
   ];
 }

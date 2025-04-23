@@ -17,17 +17,17 @@
       modules = [
         {
           type = "os";
-          key = " system  ";
+          key = " システム ";
           format = "{3}";
         }
         {
           type = "kernel";
-          key = " kernel  ";
+          key = " カーネル  ";
           format = "{1} {2} ({4})";
         }
         {
           type = "uptime";
-          key = " uptime  ";
+          key = " アップタイム  ";
         }
         {
           type = "wm";
@@ -35,42 +35,42 @@
         }
         {
           type = "terminal";
-          key = "terminal  ";
+          key = "ターミナル  ";
         }
         {
           type = "terminalfont";
-          key = "font      ";
+          key = "フォント      ";
         }
         {
           type = "shell";
-          key = "shell     ";
+          key = "シェル     ";
         }
         {
           type = "command";
-          key = "󰆧 packages";
+          key = "󰆧 パッケージ";
           text = "(${lib.getExe' pkgs.nix "nix-store"} --query --requisites /run/current-system | wc -l | tr -d '\n') && echo ' (nix; /run/current-system)'";
         }
         {
           type = "memory";
-          key = "󰍛 memory  ";
+          key = "󰍛 メモリー  ";
         }
         {
           type = "disk";
-          key = "󱥎 storage ";
+          key = "󱥎 貯蔵 ";
           format = "{1} / {2} ({3})";
           folders = "/";
         }
         {
           type = "battery";
-          key = "battery   ";
+          key = "電池   ";
         }
         {
           type = "cpu";
-          key = "cpu       ";
+          key = "CPU       ";
         }
         {
           type = "gpu";
-          key = "gpu       ";
+          key = "GPU       ";
         }
       ];
     };

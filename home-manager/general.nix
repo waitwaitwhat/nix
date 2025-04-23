@@ -2,18 +2,20 @@
   wayland.windowManager.hyprland = {
     settings = {
       monitor = [
-        "DP-2, 1920x1080@240, 0x0, 1"
-        "HDMI-A-3, 1600x900@60, 1920x0, 1"
-        "DVI-D-1, 1680x1050@60, 3520x0, 1, transform, 1"
+        # "DP-2, 1920x1080@240, 0x0, 1"
+        # "HDMI-A-3, 1600x900@60, 1920x0, 1"
+        # "DVI-D-1, 1680x1050@60, 3520x0, 1, transform, 1"
+        "eDP-1, 2256x1504@59.99900, 0x0, 1"
       ];
       exec-once = [
         # "waybar"
-        "ags run"
+        "/home/w8/nix/home-manager/eww/config/scripts/master.sh"
+        # "ags run"
         "wl-clipboard"
-       "hyprpaper"
+        "hyprpaper"
         "firefox"
         "udiskie"
-        "xrandr --output DP-2 --primary"
+        # "xrandr --output DP-2 --primary"
       ];
       input = {
         kb_layout = "us";

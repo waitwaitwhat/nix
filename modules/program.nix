@@ -14,7 +14,7 @@
       enable = true;
       xwayland.enable = true;
     };
-    # ladybird.enable = true;
+    ladybird.enable = true;
     mtr.enable = true;
     nh = {
       enable = true;

@@ -11,7 +11,7 @@
       };
     };
     # wireless.enable = true;
-    # nameservers = [ "1.1.1.1" ];
+    nameservers = [ "1.1.1.1" ];
     firewall = {
       enable = true;
       allowedTCPPorts = [ 22 80 7067 ];

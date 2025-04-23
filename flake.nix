@@ -25,13 +25,17 @@
     
     flake-utils.url = "github:numtide/flake-utils";
 
+    ghostty = {
+      url = "github:ghostty-org/ghostty";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     lanzaboote = {
-      url = "github:nix-community/lanzaboote/v0.3.0";
+      url = "github:nix-community/lanzaboote/v0.4.2";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   
@@ -41,6 +45,8 @@
       url = "github:lilyinstarlight/nixos-cosmic";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixos-hardware.url = "github:nixos/nixos-hardware";
 
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
@@ -53,9 +59,14 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, lanzaboote, nixos-cosmic, disko, rust-overlay, sops-nix, ... }@inputs: 
+  outputs = { self, nixpkgs, lanzaboote, nixos-cosmic, disko, rust-overlay, sops-nix, ghostty, zen-browser, ... }@inputs: 
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -79,19 +90,15 @@
               environment.systemPackages = [
               # For debugging and troubleshooting Secure Boot.
                 pkgs.sbctl
-                pkgs.rust-bin.stable.latest.default
+                ghostty.packages.x86_64-linux.default
+                zen-browser.packages.x86_64-linux.default
               ];
-              
-              nix.settings = {
-                substituters = [ "https://cosmic.cachix.org/" ];
-                trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
-              };
 
               # Lanzaboote currently replaces the systemd-boot module.
               # This setting is usually set to true in configuration.nix
               # generated at installation time. So we force it to false
               # for now.
-              boot.loader = { 
+              boot.loader = {
 	              systemd-boot.enable = lib.mkForce false;
 	              grub.enable = lib.mkForce false;
 	            };
@@ -99,6 +106,11 @@
               boot.lanzaboote = {
                 enable = true;
                 pkiBundle = "/etc/secureboot";
+              };
+
+              nix.settings = {
+                substituters = [ "https://cosmic.cachix.org/" ];
+                trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
               };
             })
           ];

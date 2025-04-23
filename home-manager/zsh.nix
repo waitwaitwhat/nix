@@ -22,6 +22,7 @@
     };
     initExtraFirst = ''
       export PATH="$HOME/.local/bin:$PATH"
+      export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
       # TODO: See if there is better way to set this? Seems not
       zstyle ':completion:*' menu select
       if [[ -r "''${XDG_CACHE_HOME:-''$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then

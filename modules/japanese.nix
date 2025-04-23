@@ -2,12 +2,12 @@
 
 {
   i18n.inputMethod = {
-    enabled = "fcitx5";
-    fcitx5.waylandFrontend = true;
-    fcitx5.addons = with pkgs; [
-      fcitx5-gtk
-      fcitx5-configtool
-      fcitx5-mozc
-    ];
+    type = "ibus";
+    enable = true;
+    ibus.engines = with pkgs.ibus-engines; [mozc];
+  };
+
+  environment.variables = {
+    IBUS_ENABLE_SYNC_MODE = "1";
   };
 }

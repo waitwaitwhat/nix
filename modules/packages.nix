@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    # anki
+    anki-bin
     # authy
     # cargo
     chafa
@@ -22,6 +22,7 @@
     # gdb
     # gf
     iaito
+    ladybird
     # libsForQt5.qt5ct
     # libsForQt5.dolphin
     # libsForQt5.qtstyleplugin-kvantum

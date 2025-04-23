@@ -2,7 +2,7 @@ _: {
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "SUPER";
     bind = [
-      "$mainMod, A, exec, kitty"
+      "$mainMod, A, exec, ghostty"
       "$mainMod, D, exec, vesktop"
       "$mainMod, C, killactive,"
       "$mainMod, E, exec, cosmic-files"
@@ -10,7 +10,7 @@ _: {
       "$mainMod, J, togglesplit,"
       "$mainMod, M, exit,"
       "$mainMod, P, pseudo,"
-      "SUPER, R, exec, rofi -show drun -show-icons"
+      "$mainMod, R, exec, rofi -show drun -show-icons"
       "$mainMod, V, togglefloating,"
 
       #screenshot

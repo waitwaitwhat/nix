@@ -5,5 +5,7 @@
     font-awesome
     nerd-fonts.iosevka
     amiri
+    ipafont
+    kochi-substitute
   ];
 } 

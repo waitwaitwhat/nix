@@ -4,7 +4,7 @@
   services = {
     xserver = {
       enable = true;
-      xkb.layout = "us,ara";
+      xkb.layout = "us,ara,jp";
       xkb.variant = "";
       #libinput.enable = true;
       # desktopManager.plasma6.enable = true;
