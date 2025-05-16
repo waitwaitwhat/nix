@@ -43,10 +43,10 @@
       # options = [ "rw" "user" "exec" "umask=000" ]; 
       # noCheck = true;
     # };
-    "/home/w8/steam" = 
-    { device = "/dev/disk/by-uuid/49543e1a-17cb-4d8d-bf48-b320f3bec2ef";
-      fsType = "btrfs";
-    };
+    # "/home/w8/steam" = 
+    # { device = "/dev/disk/by-uuid/49543e1a-17cb-4d8d-bf48-b320f3bec2ef";
+    #   fsType = "btrfs";
+    # };
   };
 
   networking.hostName = "nix-workstation";
