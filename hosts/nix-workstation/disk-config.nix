@@ -1,72 +1,77 @@
 {
-  disko.devices =
-  {
-    disk =
-    {
-      nvme0n1 =
-      {
+  disko.devices = {
+    disk = {
+      root = {
         type = "disk";
         device = "/dev/nvme0n1";
-        content =
-        {
+        content = {
           type = "gpt";
-          partitions =
-          {
-            boot =
-            {
+          partitions = {
+            ESP = {
               size = "1G";
               type = "EF00";
-              content =
-              {
+              content = {
                 type = "filesystem";
                 format = "vfat";
                 mountpoint = "/boot";
-                mountOptions = ["defaults"];
+                mountOptions = [ "nofail" ];
               };
             };
-            system =
-            {
+            zfs = {
               size = "100%";
-              content =
-              {
-                type = "luks";
-                name = "system";
-                askPassword = true;
-                settings.allowDiscards = true;
-                content =
-                {
-                  type = "btrfs";
-                  extraArgs = ["-f"]; # Override existing partition
-                  subvolumes =
-                  {
-                    "@/" =
-                    {
-                      mountpoint = "/";
-                      mountOptions = ["noatime" "compress=zstd:1" "discard=async"];
-                    };
-                    "@/home" =
-                    {
-                      mountpoint = "/home";
-                      mountOptions = ["noatime" "compress=zstd:1" "discard=async"];
-                    };
-                    "@/nix" =
-                    {
-                      mountpoint = "/nix";
-                      mountOptions = ["noatime" "compress=zstd:1" "discard=async"];
-                    };
-                    "@/swap" =
-                    {
-                      mountpoint = "/swap";
-                      mountOptions = ["noatime" "nodatacow" "nodatasum" "discard=async"];
-                      swap =
-                      {
-                        swap-0.size = "16G";
-                        swap-0.path = "swap-0";
-                      };
-                    };
-                  };
-                };
+              content = {
+                type = "zfs";
+                pool = "zroot";
               };
+            };
+          };
+        };
+      };
+    };
+    zpool = {
+      zroot = {
+        type = "zpool";
+        rootFsOptions = {
+          mountpoint = "none";
+          compression = "zstd";
+          acltype = "posixacl";
+          xattr = "sa";
+          "com.sun:auto-snapshot" = "true";
+        };
+        options.ashift = "12";
+        datasets = {
+          "root" = {
+            type = "zfs_fs";
+            options = {
+              encryption = "aes-256-gcm";
+              keyformat = "passphrase";
+              #keylocation = "file:///tmp/secret.key";
+              keylocation = "prompt";
+            };
+            mountpoint = "/";
+
+          };
+          "root/nix" = {
+            type = "zfs_fs";
+            options.mountpoint = "/nix";
+            mountpoint = "/nix";
+          };
+
+          # README MORE: https://wiki.archlinux.org/title/ZFS#Swap_volume
+          "root/swap" = {
+            type = "zfs_volume";
+            size = "8G";
+            content = {
+              type = "swap";
+            };
+            options = {
+              volblocksize = "4096";
+              compression = "zle";
+              logbias = "throughput";
+              sync = "always";
+              primarycache = "metadata";
+              secondarycache = "none";
+              "com.sun:auto-snapshot" = "false";
             };
           };
         };
