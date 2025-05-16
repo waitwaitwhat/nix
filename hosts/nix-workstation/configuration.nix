@@ -50,6 +50,7 @@
   };
 
   networking.hostName = "nix-workstation";
+  networking.hostId = "ae894f73";
   services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia = {
     modesetting.enable = true;
