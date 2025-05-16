@@ -5,7 +5,7 @@
     [
       # ../../modules/aagl.nix
       ../../modules/bootloader.nix
-      ../../modules/cosmic.nix
+      # ../../modules/cosmic.nix
       ../../modules/font.nix
       # ../../modules/gpupassthrough.nix
       # ../../modules/greetd.nix
