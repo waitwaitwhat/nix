@@ -124,14 +124,14 @@
             ./hosts/nix-workstation/configuration.nix
             disko.nixosModules.disko
             inputs.home-manager.nixosModules.default
-	          lanzaboote.nixosModules.lanzaboote
+	          # lanzaboote.nixosModules.lanzaboote
 	          sops-nix.nixosModules.sops
 	          ({ pkgs, lib, ... }: {
               nixpkgs.overlays = [ rust-overlay.overlays.default ];
 
               environment.systemPackages = [
               # For debugging and troubleshooting Secure Boot.
-                pkgs.sbctl
+              #   pkgs.sbctl
               ];
               
               nix.settings = {
@@ -145,18 +145,15 @@
                 ];
               };
 
-              # Lanzaboote currently replaces the systemd-boot module.
-              # This setting is usually set to true in configuration.nix
-              # generated at installation time. So we force it to false
-              # for now.
-              boot.loader = { 
-	              systemd-boot.enable = lib.mkForce false;
-	              grub.enable = lib.mkForce false;
-	            };
-
-              boot.lanzaboote = {
-                enable = true;
-                pkiBundle = "/etc/secureboot";
+              boot.loader = {
+                efi = {
+                  canTouchEfiVariables = true;
+                  efiSysMountPoint = "/boot"; # ← use the same mount point here.
+                };
+                grub = {
+                  efiSupport = true;
+                  device = "nodev";
+                };
               };
             })
             nixos-cosmic.nixosModules.default
