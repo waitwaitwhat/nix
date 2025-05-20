@@ -132,6 +132,8 @@
               environment.systemPackages = [
               # For debugging and troubleshooting Secure Boot.
               #   pkgs.sbctl
+                ghostty.packages.x86_64-linux.default
+                zen-browser.packages.x86_64-linux.default
               ];
               
               nix.settings = {
@@ -144,15 +146,25 @@
                   "ezkea.cachix.org-1:ioBmUbJTZIKsHmWWXPe1FSFbeVe+afhfgqgTSNd34eI="
                 ];
               };
-
+        
               boot.loader = {
                 efi = {
                   canTouchEfiVariables = true;
-                  efiSysMountPoint = "/boot"; # ← use the same mount point here.
+                  efiSysMountPoint = "/boot";
                 };
                 grub = {
+                  enable = true;
+                  useOSProber = true;
                   efiSupport = true;
-                  device = "nodev";
+                  devices = [ "nodev" ];
+                  extraEntries = ''
+                    menuentry "Reboot" {
+                      reboot
+                    }
+                    menuentry "Poweroff" {
+                      halt
+                    }
+                  '';
                 };
               };
             })

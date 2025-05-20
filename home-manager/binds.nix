@@ -6,7 +6,7 @@ _: {
       "$mainMod, D, exec, vesktop"
       "$mainMod, C, killactive,"
       "$mainMod, E, exec, cosmic-files"
-      "$mainMod, F, exec, firefox"
+      "$mainMod, F, exec, zen"
       "$mainMod, J, togglesplit,"
       "$mainMod, M, exit,"
       "$mainMod, P, pseudo,"

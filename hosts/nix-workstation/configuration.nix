@@ -31,24 +31,25 @@
   boot.supportedFilesystems = [ "ntfs" ];
   
   fileSystems = {
-    # "/home/w8/windows" = { 
-      # device = "UUID=FE5ABAA35ABA57DB"; 
-      # fsType = "lowntfs-3g"; 
-      # options = [ "rw" "user" "exec" "umask=000" ]; 
-      # noCheck = true;
-    # };
-    # "/home/w8/hd" = { 
-      # device = "UUID=D8A67C98A67C7938"; 
-      # fsType = "lowntfs-3g"; 
-      # options = [ "rw" "user" "exec" "umask=000" ]; 
-      # noCheck = true;
-    # };
+    "/home/w8/windows" = { 
+      device = "UUID=0C70234070232FBE"; 
+      fsType = "lowntfs-3g"; 
+      options = [ "rw" "user" "exec" "umask=000" ]; 
+      noCheck = true;
+    };
+    "/home/w8/hd" = { 
+      device = "UUID=D8A67C98A67C7938"; 
+      fsType = "lowntfs-3g"; 
+      options = [ "rw" "user" "exec" "umask=000" ]; 
+      noCheck = true;
+    };
     # "/home/w8/steam" = 
     # { device = "/dev/disk/by-uuid/49543e1a-17cb-4d8d-bf48-b320f3bec2ef";
     #   fsType = "btrfs";
     # };
   };
 
+  time.timeZone = "Australia/Sydney";
   networking.hostName = "nix-workstation";
   networking.hostId = "ae894f73";
   services.xserver.videoDrivers = ["nvidia"];

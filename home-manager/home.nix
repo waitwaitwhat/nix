@@ -4,7 +4,7 @@
   imports = [
     # ./alacritty.nix
     # ./emacs
-    ./eww/default.nix
+    # ./eww/default.nix
     ./fastfetch.nix
     ./firefox.nix
     ./git.nix
@@ -19,7 +19,7 @@
     ./programs.nix
     ./rofi.nix
     ./starship.nix
-    # ./waybar.nix
+    ./waybar.nix
     # ./wezterm.nix
     ./zsh.nix
     inputs.ags.homeManagerModules.default

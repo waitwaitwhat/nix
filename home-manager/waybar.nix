@@ -112,7 +112,7 @@ in {
       }
 
       window#waybar {
-          background: none;
+          background: rgba(17,17,27,1);
       }
 
       #workspaces {

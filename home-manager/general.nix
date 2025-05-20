@@ -2,18 +2,18 @@
   wayland.windowManager.hyprland = {
     settings = {
       monitor = [
-        # "DP-2, 1920x1080@240, 0x0, 1"
-        # "HDMI-A-3, 1600x900@60, 1920x0, 1"
-        # "DVI-D-1, 1680x1050@60, 3520x0, 1, transform, 1"
-        "eDP-1, 2256x1504@59.99900, 0x0, 1"
+        "DP-2, 1920x1080@240, 0x0, 1"
+        "HDMI-A-3, 1600x900@60, 1920x0, 1"
+        "DVI-D-1, 1680x1050@60, 3520x0, 1"
+        # "eDP-1, 2256x1504@59.99900, 0x0, 1"
       ];
       exec-once = [
-        # "waybar"
-        "/home/w8/nix/home-manager/eww/config/scripts/master.sh"
+        "waybar"
+        # "/home/w8/nix/home-manager/eww/config/scripts/master.sh"
         # "ags run"
         "wl-clipboard"
         "hyprpaper"
-        "firefox"
+        "zen"
         "udiskie"
         # "xrandr --output DP-2 --primary"
       ];
@@ -94,6 +94,9 @@
     extraConfig = ''
       bind =, Print, exec, grim -g "$(slurp)" - | satty -f - --fullscreen --output-filename ~/Pictures/screenshots/$(date '+%Y%m%d-%H:%M:%S').png
       windowrulev2 = immediate, class:^(cs2)$
+      workspace = 1, monitor:DP-2
+      workspace = 2, monitor:HDMI-A-3
+      workspace = 3, monitor:DVI-D-1
     '';
   };
 }

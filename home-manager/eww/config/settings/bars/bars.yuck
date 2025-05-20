@@ -1,5 +1,5 @@
 (defwindow centerPanel
-  :monitor "0"
+  :monitor "2"
   :stacking "bg"
   :exclusive true
   :windowtype "dock"
